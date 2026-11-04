@@ -1,0 +1,28 @@
+{
+  "arquivos": {
+    "pseudo": {
+      "n": 109,
+      "dim": 768,
+      "sha256": "a053377f37ee6cf83326e3236f02d708db58867cc65f70bfac052cdc4d3460c7",
+      "sha256_entrada": "2d49d8e0a281631c0b2018ff9fefb023b33ba0b574221d2b4c1bfb5b2c633154"
+    },
+    "sint": {
+      "n": 1212,
+      "dim": 768,
+      "sha256": "827e044c945ca26af28b0dca448d0f694f79c5e5ecddf631f24b0ee868dbd1ca",
+      "sha256_entrada": "7f763b819b74117d5c1ab8ebcb0d029a054e97676e9de23a753d2e1459cf1bd7"
+    },
+    "sint_desc": {
+      "n": 101,
+      "dim": 768,
+      "sha256": "b861b0b6b6eb4ddefa9e6d9f150fe04dc56a317f63121f2bdbf82a8d29c28483",
+      "sha256_entrada": "ac591bf46b197b62bfcc97800c580d0e8320e94c7484184f919f985cf2548240"
+    }
+  },
+  "modelo": "intfloat/multilingual-e5-base",
+  "revisao": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "max_seq_length": 512,
+  "data": "2026-11-03",
+  "normalizado": true,
+  "dtype": "float32"
+}

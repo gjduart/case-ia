@@ -1,0 +1,36 @@
+# Testado nesta maquina (Docker 29.9.2, Compose 5.7.0): o servico `replicar` reproduz o publicacao.csv
+# e o previsao.txt byte a byte (mesmo md5), sem rede; a API responde /ingerir e /classificar.
+#
+# 1) export DOCKER_UID=$(id -u) DOCKER_GID=$(id -g)    # arquivos gerados ficam com o seu usuario
+# 2) docker compose run --rm replicar                  # gera publicacao.csv, previsao.txt e cache/modelo_producao.pkl
+# 3) docker compose up api                             # http://localhost:8000/docs
+services:
+  replicar:
+    build:
+      context: .
+      target: base
+    command: ["./replicar.sh"]
+    user: "${DOCKER_UID:-1000}:${DOCKER_GID:-1000}"
+    environment:
+      HOME: /tmp
+    volumes:
+      - ./:/app
+    network_mode: none   # prova de que a replicacao roda offline
+
+  api:
+    build:
+      context: .
+      target: api
+    command: ["uvicorn", "api.app:app", "--host", "0.0.0.0", "--port", "8000"]
+    user: "${DOCKER_UID:-1000}:${DOCKER_GID:-1000}"
+    ports:
+      - "8000:8000"
+    environment:
+      HOME: /tmp
+      HF_HOME: /hf
+      HF_HUB_OFFLINE: "1"
+    volumes:
+      - ./:/app
+      # so os pesos ja baixados (Qwen3-Embedding-0.6B, via scripts/embeddings.py --modelo qwen);
+      # o token do Hugging Face NAO entra no conteiner
+      - ${HOME}/.cache/huggingface/hub:/hf/hub:ro

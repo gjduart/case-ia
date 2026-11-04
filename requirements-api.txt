@@ -1,0 +1,15 @@
+# API (POST /ingerir usa o Qwen3 local; /classificar nao). Torch CPU:
+#   pip install --extra-index-url https://download.pytorch.org/whl/cpu -r requirements-api.txt
+# Python 3.14.8 (mesmo do requirements.txt)
+-r requirements.txt
+fastapi==0.162.0
+uvicorn==0.54.0
+pydantic==2.14.2
+pydantic_core==2.50.2
+starlette==1.10.0
+sentence-transformers==6.2.0
+transformers==5.22.1
+tokenizers==0.23.3
+huggingface_hub==2.4.0
+safetensors==0.8.0
+torch==2.15.0

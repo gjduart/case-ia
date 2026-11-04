@@ -1,0 +1,35 @@
+{
+  "arquivos": {
+    "questoes": {
+      "n": 659,
+      "dim": 1024,
+      "sha256": "1b8d80417116a87e1bb8021f674be29d15ded0954dfab443d2bab9043a1ba71e",
+      "sha256_entrada": "bc0d79b147fe2d868db2bc320379d730fca17f9f9ca1a7314c4dcdde9f180654"
+    },
+    "pseudo": {
+      "n": 109,
+      "dim": 1024,
+      "sha256": "9b68c35b3c1141f8cf8ce4f2f8b5fb34991f9a42a37e0d7593a55fae752ba602",
+      "sha256_entrada": "98789e980241c793a7eb31d12e8b71c4e271776585bc98c60101fa17c7e03d29"
+    },
+    "sint": {
+      "n": 1212,
+      "dim": 1024,
+      "sha256": "d9e6f5c4779eb8c9689153a45692ffd2cfcc41a5b0d19a22b45849f565d72d04",
+      "sha256_entrada": "df87b8a91f9080f90e2a6aa91eecdadaad695f4dba981f0c92cbb52d6c777d46"
+    },
+    "sint_desc": {
+      "n": 101,
+      "dim": 1024,
+      "sha256": "f40221fdbd62e95836e618d859f6ad83de11c34a1ef1c7765646414613f96b0e",
+      "sha256_entrada": "643ca4face02e62c7ceff54b86c745f72b82f3d908e4931771f9cc4d8e6e2f34"
+    }
+  },
+  "modelo": "Qwen/Qwen3-Embedding-0.6B",
+  "revisao": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "max_seq_length": 512,
+  "data": "2026-11-03",
+  "normalizado": true,
+  "dtype": "float32",
+  "instrucao_query": "Dada uma questao de prova juridica brasileira, recuperar o tema juridico (assunto) ao qual ela pertence"
+}

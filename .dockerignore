@@ -1,0 +1,10 @@
+venv/
+../venv
+__pycache__/
+*.pyc
+.claude/
+cache/modelo_producao.pkl
+cache/ingestao/
+*.log
+relatorio/*.aux
+relatorio/*.out

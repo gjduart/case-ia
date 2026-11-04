@@ -1,0 +1,11 @@
+# Versoes exatas do ambiente que gerou publicacao.csv / previsao.txt (../venv, Python 3.14.8).
+# So o necessario para ./replicar.sh (offline, sem modelo de linguagem).
+numpy==2.5.4
+pandas==3.1.0
+scipy==1.18.1
+scikit-learn==1.9.1
+joblib==1.6.0
+threadpoolctl==3.7.0
+python-dateutil==4.0.0
+six==1.17.0
+tzdata==2026.6

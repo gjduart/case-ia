@@ -1,0 +1,3847 @@
+{
+ "fonte": "https://legis.senado.leg.br/dadosabertos (API de Dados Abertos do Senado Federal)",
+ "endpoint": "/legislacao/{tipo}/{numero}/{ano}",
+ "consultado_em": "2026-11-03",
+ "observacao": "Cache versionado. O pipeline de publicacao NAO faz chamada de rede nem de LLM; le este arquivo. Campos novos: indexacao, catalogo, classes, edivs, consultado_em.",
+ "normas": {
+  "DEL-2848-1940": {
+   "ok": true,
+   "normaNome": "Decreto-Lei nº 2.848 de 07/12/1940",
+   "apelido": "DEL-2848-1940-12-07 , Código Penal (1940) (CP)",
+   "ementa": "Código Penal.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1940-12-07;2848",
+   "indexacao": [
+    "CODIGO PENAL"
+   ],
+   "catalogo": [
+    "CODIGO PENAL"
+   ],
+   "classes": [],
+   "edivs": [],
+   "consultado_em": "2026-11-03"
+  },
+  "DEL-3689-1941": {
+   "ok": true,
+   "normaNome": "Decreto-Lei nº 3.689 de 03/10/1941",
+   "apelido": "DEL-3689-1941-10-03 , Código de Processo Penal (1941) (CPP)",
+   "ementa": "Código de Processo Penal.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-10-03;3689",
+   "indexacao": [
+    "CODIGO DE PROCESSO PENAL"
+   ],
+   "catalogo": [
+    "CODIGO DE PROCESSO PENAL"
+   ],
+   "classes": [],
+   "edivs": [],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-2889-1956": {
+   "ok": true,
+   "normaNome": "Lei nº 2.889 de 01/10/1956",
+   "apelido": "LEI-2889-1956-10-01 , Lei do Genocídio (1956)",
+   "ementa": "Define e pune o crime de genocídio.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1956-10-01;2889",
+   "indexacao": [
+    "PENALIDADE",
+    "GENOCIDIO",
+    "DEFINIÇÃO"
+   ],
+   "catalogo": [
+    "GENOCIDIO"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Regulamentação Permanente de Norma",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-6368-1976": {
+   "ok": true,
+   "normaNome": "Lei nº 6.368 de 21/10/1976",
+   "apelido": "LEI-6368-1976-10-21 , Lei dos Tóxicos (1976) , Lei dos Antidrogas (1976) , Lei de Entorpecentes (1976)",
+   "ementa": "Dispõe sobre medidas de prevenção e repressão ao tráfico ilícito e uso indevido de substâncias entorpecentes ou que determinem dependência física ou psíquica, e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1976-10-21;6368",
+   "indexacao": [
+    "COMPETENCIA",
+    "AUTORIDADE SANITARIA",
+    "AUTORIZAÇÃO",
+    "PLANTIO",
+    "VEGETAIS",
+    "ORIGEM",
+    "ENTORPECENTE",
+    "DEPENDENCIA FISICA",
+    "DEPENDENCIA PSIQUICA",
+    "REQUISITOS",
+    "POLICIAL",
+    "DEPARTAMENTO DE POLICIA FEDERAL (DPF)",
+    "EXECUÇÃO",
+    "SERVIÇO",
+    "COMBATE",
+    "PREVENÇÃO",
+    "TRAFICO",
+    "UTILIZAÇÃO",
+    "NORMAS",
+    "PROCEDIMENTO",
+    "AUTORIDADE",
+    "CARACTERIZAÇÃO",
+    "CRIME",
+    "INFRAÇÃO",
+    "LEGISLAÇÃO",
+    "TRATAMENTO MEDICO",
+    "RECUPERAÇÃO",
+    "DEFINIÇÃO",
+    "SERVIÇO NACIONAL DE FISCALIZAÇÃO DA MEDICINA E FARMACIA (SNFMF)",
+    "MINISTERIO DA SAUDE (MS)",
+    "UNIÃO FEDERAL",
+    "CELEBRAÇÃO",
+    "CONVENIO",
+    "ESTADOS",
+    "OBJETIVO",
+    "REPRESSÃO",
+    "SERVIÇO DE SAUDE",
+    "TERRITORIOS FEDERAIS",
+    "DISTRITO FEDERAL (DF)",
+    "MINISTERIO DA PREVIDENCIA E ASSISTENCIA SOCIAL (MPAS)",
+    "EXCLUSÃO",
+    "LICENÇA",
+    "AQUISIÇÃO",
+    "MEDICAMENTOS",
+    "ATENDIMENTO",
+    "MEDICO",
+    "FIXAÇÃO",
+    "VALOR",
+    "MULTA",
+    "PROIBIÇÃO",
+    "LIMITAÇÃO",
+    "FISCALIZAÇÃO",
+    "CONTROLE",
+    "PRODUÇÃO",
+    "COMERCIO",
+    "DEVERES",
+    "PESSOA JURIDICA",
+    "PESSOA FISICA",
+    "COLABORAÇÃO",
+    "PLANO",
+    "PENALIDADE",
+    "SANÇÃO",
+    "AUSENCIA",
+    "GOVERNO FEDERAL",
+    "INCLUSÃO",
+    "CURRICULO",
+    "PROGRAMA",
+    "CURSOS",
+    "FORMAÇÃO",
+    "PROFESSOR",
+    "DISCIPLINA",
+    "AUTORIDADE POLICIAL",
+    "MINISTERIO PUBLICO",
+    "REALIZAÇÃO",
+    "INSPEÇÃO",
+    "FALENCIA",
+    "LIQUIDAÇÃO JUDICIAL",
+    "HOSPITAL",
+    "EMPRESA",
+    "INDUSTRIA",
+    "SERVIÇO MEDICO",
+    "INICIATIVA PRIVADA",
+    "SAFRA",
+    "EXPLORAÇÃO",
+    "TERRITORIO NACIONAL",
+    "EXTRAÇÃO",
+    "PROCEDIMENTO JUDICIAL",
+    "CODIGO DE PROCESSO PENAL",
+    "ALFANDEGA",
+    "DESTINAÇÃO",
+    "APREENSÃO",
+    "FABRICAÇÃO",
+    "TRANSFORMAÇÃO",
+    "PREPARAÇÃO",
+    "IMPORTAÇÃO",
+    "EXPORTAÇÃO",
+    "REEXPORTAÇÃO",
+    "TRANSPORTE",
+    "EXPOSIÇÃO",
+    "VENDA",
+    "TROCA",
+    "CESSÃO",
+    "MATERIA-PRIMA",
+    "DROGA",
+    "TOXICO",
+    "SISTEMA NACIONAL",
+    "OBRIGATORIEDADE",
+    "DIRIGENTE",
+    "ESTABELECIMENTO DE ENSINO",
+    "INSTITUIÇÃO BENEFICENTE",
+    "INSTITUIÇÃO EDUCACIONAL",
+    "INSTITUIÇÃO RECREATIVA",
+    "INSTITUIÇÃO ESPORTIVA"
+   ],
+   "catalogo": [
+    "TOXICO"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 91",
+      "Art. 281"
+     ]
+    },
+    {
+     "norma": "Decreto-Lei nº 1.004 de 21/10/1969",
+     "cod": "524630",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 311"
+     ]
+    },
+    {
+     "norma": "Lei nº 5.726 de 29/10/1971",
+     "cod": "547599",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1",
+      "Art. 2",
+      "Art. 3",
+      "Art. 4",
+      "Art. 5",
+      "Art. 6",
+      "Art. 7",
+      "Art. 8",
+      "Art. 9",
+      "Art. 10",
+      "Art. 11",
+      "Art. 12",
+      "Art. 13",
+      "Art. 14",
+      "Art. 15",
+      "Art. 16",
+      "Art. 17",
+      "Art. 18",
+      "Art. 19",
+      "Art. 20",
+      "Art. 21",
+      "Art. 23",
+      "Art. 24",
+      "Art. 25",
+      "Art. 26",
+      "Art. 27"
+     ]
+    },
+    {
+     "norma": "Lei nº 6.016 de 31/12/1973",
+     "cod": "547892",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-7210-1984": {
+   "ok": true,
+   "normaNome": "Lei nº 7.210 de 11/07/1984",
+   "apelido": "LEI-7210-1984-07-11 , Lei de Execução Penal (1984)",
+   "ementa": "Institui a Lei de Execução Penal.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1984-07-11;7210",
+   "indexacao": [
+    "NORMAS GERAIS",
+    "LEI DE EXECUÇÃO PENAL"
+   ],
+   "catalogo": [
+    "LEI DE EXECUÇÃO PENAL"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 26",
+      "Art. 33",
+      "Art. 34",
+      "Art. 35",
+      "Art. 36",
+      "Art. 39",
+      "Art. 40",
+      "Art. 42",
+      "Art. 43",
+      "Art. 45",
+      "Art. 46",
+      "Art. 47",
+      "Art. 49",
+      "Art. 50",
+      "Art. 52",
+      "Art. 54",
+      "Art. 57",
+      "Art. 58",
+      "Art. 69",
+      "Art. 70",
+      "Art. 75",
+      "Art. 77",
+      "Art. 78",
+      "Art. 81",
+      "Art. 83",
+      "Art. 86",
+      "Art. 87",
+      "Art. 89",
+      "Art. 90",
+      "Art. 92",
+      "Art. 96",
+      "Art. 97",
+      "Art. 107",
+      "Art. 299"
+     ]
+    },
+    {
+     "norma": "Lei nº 269 de 09/04/1948",
+     "cod": "541412",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-7716-1989": {
+   "ok": true,
+   "normaNome": "Lei nº 7.716 de 05/01/1989",
+   "apelido": "LEI-7716-1989-01-05 , Lei Caó (1989) , Lei dos Crimes Raciais (1989)",
+   "ementa": "Define os crimes resultantes de preconceito de raça ou de cor.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1989-01-05;7716",
+   "indexacao": [
+    "DEFINIÇÃO",
+    "CRIME",
+    "RESULTADO",
+    "DISCRIMINAÇÃO",
+    "RAÇA",
+    "COR",
+    "FIXAÇÃO",
+    "PENA",
+    "HIPOTESE",
+    "IMPEDIMENTO",
+    "ACESSO",
+    "ADMINISTRAÇÃO DIRETA",
+    "ADMINISTRAÇÃO INDIRETA",
+    "CONCESSIONARIA",
+    "SERVIÇO PUBLICO",
+    "ESTABELECIMENTO COMERCIAL",
+    "ESTABELECIMENTO DE ENSINO",
+    "HOSPEDAGEM",
+    "HOTEL",
+    "RESTAURANTE",
+    "BAR",
+    "CLUBE",
+    "EDIFICIO",
+    "TRANSPORTE",
+    "CASAMENTO",
+    "FORÇAS ARMADAS"
+   ],
+   "catalogo": [
+    "DISCRIMINAÇÃO RACIAL"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 1.390 de 03/07/1951",
+     "cod": "543053",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 7.437 de 20/12/1985",
+     "cod": "549313",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Regulamentação Permanente de Norma",
+     "dispositivos": [
+      "Art. 5, caput, Inciso 42"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-8137-1990": {
+   "ok": true,
+   "normaNome": "Lei nº 8.137 de 27/12/1990",
+   "apelido": "LEI-8137-1990-12-27 , Lei de Crimes Contra a Ordem Tributária (1990) , Lei de Sonegação Fiscal (1990)",
+   "ementa": "Define crimes contra a ordem tributária, econômica e contra as relações de consumo, e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-12-27;8137",
+   "indexacao": [
+    "NORMAS",
+    "DEFINIÇÃO",
+    "CRIME CONTRA A ORDEM TRIBUTARIA",
+    "CRIME CONTRA A ORDEM ECONOMICA",
+    "CRIME CONTRA A RELAÇÃO DE CONSUMO",
+    "PROIBIÇÃO",
+    "FORMAÇÃO",
+    "MONOPOLIO",
+    "CRIME FUNCIONAL",
+    "FIXAÇÃO",
+    "MULTA",
+    "HIPOTESE"
+   ],
+   "catalogo": [
+    "POLITICA ECONOMICO FINANCEIRA"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 163",
+      "Art. 172",
+      "Art. 275",
+      "Art. 276",
+      "Art. 279",
+      "Art. 316, § 1",
+      "Art. 318"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-8666-1993": {
+   "ok": true,
+   "normaNome": "Lei nº 8.666 de 21/06/1993",
+   "apelido": "LEI-8666-1993-06-21 , Lei de Licitações e Contratos (1993)",
+   "ementa": "Regulamenta o art. 37, inciso XXI, da Constituição Federal, institui normas para licitações e contratos da Administração Pública e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1993-06-21;8666",
+   "indexacao": [
+    "FIXAÇÃO",
+    "NORMAS",
+    "LICITAÇÃO",
+    "CONTRATO ADMINISTRATIVO",
+    "ADMINISTRAÇÃO FEDERAL"
+   ],
+   "catalogo": [
+    "COMPRAS PUBLICAS"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 49",
+      "Art. 92",
+      "Art. 321"
+     ]
+    },
+    {
+     "norma": "Lei nº 5.194 de 24/12/1966",
+     "cod": "547056",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 83"
+     ]
+    },
+    {
+     "norma": "Decreto nº 84.701 de 13/05/1980",
+     "cod": "507341",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Decreto-Lei nº 2.300 de 21/11/1986",
+     "cod": "527213",
+     "comentario": "Declaração de Novo Tratamento Permanente da Matéria",
+     "dispositivos": []
+    },
+    {
+     "norma": "Decreto-Lei nº 2.348 de 24/07/1987",
+     "cod": "527309",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Decreto-Lei nº 2.360 de 16/09/1987",
+     "cod": "527333",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Regulamentação Permanente de Norma",
+     "dispositivos": [
+      "Art. 37, caput, Inciso 21"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.220 de 04/09/1991",
+     "cod": "550096",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-9099-1995": {
+   "ok": true,
+   "normaNome": "Lei nº 9.099 de 26/09/1995",
+   "apelido": "LEI-9099-1995-09-26 , Lei dos Juizados Especiais Cíveis e Criminais (1995)",
+   "ementa": "Dispõe sobre os Juizados Especiais Cíveis e Criminais e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1995-09-26;9099",
+   "indexacao": [
+    "JUIZADO ESPECIAL DE PEQUENAS CAUSAS"
+   ],
+   "catalogo": [
+    "JUIZADO ESPECIAL DE PEQUENAS CAUSAS"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Lei nº 4.611 de 02/04/1965",
+     "cod": "546464",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 7.244 de 07/11/1984",
+     "cod": "549120",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 208, caput, Inciso 7"
+     ]
+    },
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Regulamentação Permanente de Norma",
+     "dispositivos": [
+      "Art. 98, caput, Inciso 1"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-9455-1997": {
+   "ok": true,
+   "normaNome": "Lei nº 9.455 de 07/04/1997",
+   "apelido": "LEI-9455-1997-04-07 , Lei dos Crimes de Tortura (1997)",
+   "ementa": "Define os crimes de tortura e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1997-04-07;9455",
+   "indexacao": [
+    "FIXAÇÃO",
+    "NORMAS",
+    "TIPICIDADE",
+    "CRIME",
+    "TORTURA",
+    "CRIME INAFIANÇAVEL",
+    "DISPENSA",
+    "CONCESSÃO",
+    "CONDENADO",
+    "BENEFICIO",
+    "GRAÇA",
+    "ANISTIA",
+    "HIPOTESE",
+    "AUMENTO",
+    "PENA"
+   ],
+   "catalogo": [
+    "CRIME",
+    "TORTURA"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Regulamentação Permanente de Norma",
+     "dispositivos": [
+      "Art. 5, caput, Inciso 43"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.069 de 13/07/1990",
+     "cod": "549945",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 233"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-9605-1998": {
+   "ok": true,
+   "normaNome": "Lei nº 9.605 de 12/02/1998",
+   "apelido": "LEI-9605-1998-02-12 , Lei da Natureza (1998) , Lei dos Crimes contra o Meio Ambiente (1998) , Lei dos Crimes Ambientais (1998)",
+   "ementa": "Dispõe sobre as sanções penais e administrativas derivadas de condutas e atividades lesivas ao meio ambiente, e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1998-02-12;9605",
+   "indexacao": [
+    "CRITERIOS",
+    "APREENSÃO",
+    "PRODUTO",
+    "INSTRUMENTO",
+    "INFRAÇÃO",
+    "LEGISLAÇÃO",
+    "MEIO AMBIENTE",
+    "FIXAÇÃO",
+    "PENALIDADE",
+    "RESPONSABILIDADE",
+    "PESSOA JURIDICA",
+    "PESSOA FISICA",
+    "CRIME",
+    "RECURSOS AMBIENTAIS",
+    "DEFINIÇÃO",
+    "FAUNA",
+    "FLORA",
+    "CAÇA",
+    "INCENDIO",
+    "FLORESTA",
+    "PICHAÇÃO",
+    "POLUIÇÃO",
+    "PATRIMONIO CULTURAL",
+    "SETOR URBANO",
+    "OMISSÃO",
+    "ADMINISTRAÇÃO",
+    "AÇÃO PENAL",
+    "PROCESSO PENAL",
+    "INFRAÇÃO PENAL"
+   ],
+   "catalogo": [
+    "POLITICA DO MEIO AMBIENTE"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Lei nº 6.938 de 31/08/1981",
+     "cod": "548814",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-9613-1998": {
+   "ok": true,
+   "normaNome": "Lei nº 9.613 de 03/03/1998",
+   "apelido": "LEI-9613-1998-03-03 , Lei de Lavagem de Dinheiro (1998)",
+   "ementa": "Dispõe sobre os crimes de \"lavagem\" ou ocultação de bens, direitos e valores; a prevenção da utilização do sistema financeiro para os ilícitos previstos nesta Lei; cria o Conselho de Controle de Atividades Financeiras - COAF, e dá outras providências",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1998-03-03;9613",
+   "indexacao": [
+    "CRIAÇÃO",
+    "CONSELHO",
+    "CONTROLE",
+    "ATIVIDADE",
+    "MATERIA FINANCEIRA",
+    "AMBITO",
+    "MINISTERIO DA FAZENDA (MF)",
+    "HIPOTESE",
+    "REDUÇÃO",
+    "PENA",
+    "AUTOR",
+    "CO AUTORIA",
+    "COLABORAÇÃO",
+    "ESCLARECIMENTOS",
+    "INFORMAÇÕES",
+    "APURAÇÃO",
+    "INFRAÇÃO PENAL",
+    "AUTORIDADE",
+    "NORMAS",
+    "DEFINIÇÃO",
+    "CRIME",
+    "PENALIDADE",
+    "LAVAGEM DE DINHEIRO",
+    "OCULTAÇÃO",
+    "BENS",
+    "DIREITOS",
+    "VALORES",
+    "ORIGEM",
+    "TRAFICO",
+    "DROGA",
+    "TERRORISMO",
+    "CONTRABANDO",
+    "ARMA DE FOGO",
+    "SEQUESTRO",
+    "CRIME CONTRA A ADMINISTRAÇÃO PUBLICA",
+    "CRIME DO COLARINHO BRANCO",
+    "CRIME ORGANIZADO"
+   ],
+   "catalogo": [
+    "LAVAGEM DE DINHEIRO",
+    "ENRIQUECIMENTO ILICITO"
+   ],
+   "classes": [],
+   "edivs": [],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-10826-2003": {
+   "ok": true,
+   "normaNome": "Lei nº 10.826 de 22/12/2003",
+   "apelido": "LEI-10826-2003-12-22 , Lei do Porte de Armas (2003) , Estatuto do Desarmamento (2003)",
+   "ementa": "Dispõe sobre registro, posse e comercialização de armas de fogo e munição, sobre o Sistema Nacional de Armas - Sinarm, define crimes e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2003-12-22;10826",
+   "indexacao": [
+    "DEFINIÇÃO",
+    "CRITERIOS",
+    "RESTRIÇÃO",
+    "REGISTRO",
+    "POSSE",
+    "PORTE DE ARMA",
+    "CADASTRO",
+    "AQUISIÇÃO",
+    "COMERCIALIZAÇÃO",
+    "UTILIZAÇÃO",
+    "GUARDA",
+    "ARMA DE FOGO",
+    "REALIZAÇÃO",
+    "REFERENDO",
+    "APROVAÇÃO",
+    "POPULAÇÃO",
+    "OBJETIVO",
+    "DESARMAMENTO",
+    "CRIME",
+    "PENALIDADE",
+    "INFRAÇÃO",
+    "LEGISLAÇÃO"
+   ],
+   "catalogo": [
+    "SEGURANÇA PUBLICA"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Soberania, Defesa Nacional e Ordem Pública / Defesa do Estado e das Instituições Democráticas / Segurança Pública"
+   ],
+   "edivs": [
+    {
+     "norma": "Lei nº 9.437 de 20/02/1997",
+     "cod": "551313",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-11340-2006": {
+   "ok": true,
+   "normaNome": "Lei nº 11.340 de 07/08/2006",
+   "apelido": "LEI-11340-2006-08-07 , Lei Maria da Penha (2006)",
+   "ementa": "Cria mecanismos para coibir a violência doméstica e familiar contra a mulher, nos termos do § 8º do art. 226 da Constituição Federal, da Convenção sobre a Eliminação de Todas as Formas de Discriminação contra as Mulheres e da Convenção Interamericana para Prevenir, Punir e Erradicar a Violência contra a Mulher; dispõe sobre a criação dos Juizados de Violência Doméstica e Familiar contra a Mulher; altera o Código de Processo Penal, o Código Penal e a Lei de Execução Penal; e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2006-08-07;11340",
+   "indexacao": [
+    "ALTERAÇÃO",
+    "DISPOSITIVOS",
+    "CODIGO DE PROCESSO PENAL",
+    "CORRELAÇÃO",
+    "DECRETAÇÃO",
+    "PRISÃO PREVENTIVA",
+    "GARANTIA",
+    "PROTEÇÃO",
+    "URGENCIA",
+    "DEFESA",
+    "MULHER",
+    "DETERMINAÇÃO",
+    "CRIAÇÃO",
+    "JUIZADO ESPECIAL CIVEL",
+    "JUIZADO ESPECIAL CRIMINAL",
+    "ATENDIMENTO",
+    "PROCESSO",
+    "JULGAMENTO",
+    "EXECUÇÃO JUDICIAL",
+    "CODIGO PENAL",
+    "LEI DE EXECUÇÃO PENAL",
+    "DEFINIÇÃO",
+    "PENALIDADE",
+    "HIPOTESE",
+    "LESÃO CORPORAL",
+    "VIOLENCIA",
+    "NORMAS",
+    "COMBATE",
+    "PREVENÇÃO",
+    "AGRESSÃO"
+   ],
+   "catalogo": [
+    "POLITICA SOCIAL",
+    "DEFESA",
+    "MULHER"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Política Social / Proteção Social / Mulheres",
+    "Classificação Temática Unificada / Jurídico / Direito Penal e Penitenciário",
+    "Classificação Temática Unificada / Jurídico / Processo / Processo Penal"
+   ],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 61, caput, Inciso 2, Alínea f",
+      "Art. 129"
+     ]
+    },
+    {
+     "norma": "Decreto-Lei nº 3.689 de 03/10/1941",
+     "cod": "528776",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 313, caput, Inciso 4"
+     ]
+    },
+    {
+     "norma": "Lei nº 7.210 de 11/07/1984",
+     "cod": "549086",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 152"
+     ]
+    },
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 226, § 8"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-11340-2016": {
+   "ok": false,
+   "erro": "KeyError: 'documentos'"
+  },
+  "LEI-11343-2006": {
+   "ok": true,
+   "normaNome": "Lei nº 11.343 de 23/08/2006",
+   "apelido": "LEI-11343-2006-08-23 , Lei de Entorpecentes (2006) , Lei Antitóxicos (2006) , Lei dos Tóxicos (2006) , Lei de Drogas (2006) , Lei Antidrogas (2006)",
+   "ementa": "Institui o Sistema Nacional de Políticas Públicas sobre Drogas - Sisnad; prescreve medidas para prevenção do uso indevido, atenção e reinserção social de usuários e dependentes de drogas; estabelece normas para repressão à produção não autorizada e ao tráfico ilícito de drogas; define crimes e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2006-08-23;11343",
+   "indexacao": [
+    "NORMAS",
+    "CRIAÇÃO",
+    "SISTEMA NACIONAL",
+    "OBJETIVO",
+    "FISCALIZAÇÃO",
+    "CONTROLE",
+    "REPRESSÃO",
+    "SERVIÇO",
+    "DEFINIÇÃO",
+    "CRIME",
+    "COMBATE",
+    "PREVENÇÃO",
+    "TRAFICO",
+    "UTILIZAÇÃO",
+    "ENTORPECENTE",
+    "DROGA"
+   ],
+   "catalogo": [
+    "TOXICO"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Política Social / Saúde",
+    "Classificação Temática Unificada / Jurídico / Direito Penal e Penitenciário",
+    "Classificação Temática Unificada / Jurídico / Processo / Processo Penal"
+   ],
+   "edivs": [
+    {
+     "norma": "Lei nº 6.368 de 21/10/1976",
+     "cod": "548244",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 10.409 de 11/01/2002",
+     "cod": "552285",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-12683-2012": {
+   "ok": true,
+   "normaNome": "Lei nº 12.683 de 09/07/2012",
+   "apelido": "LEI-12683-2012-07-09",
+   "ementa": "Altera a Lei nº 9.613, de 3 de março de 1998, para tornar mais eficiente a persecução penal dos crimes de lavagem de dinheiro.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2012-07-09;12683",
+   "indexacao": [
+    "ALTERAÇÃO",
+    "EFICIENCIA",
+    "INVESTIGAÇÃO",
+    "PROCESSO PENAL",
+    "CRIME",
+    "LAVAGEM DE DINHEIRO",
+    "ENRIQUECIMENTO ILICITO"
+   ],
+   "catalogo": [
+    "LAVAGEM DE DINHEIRO"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Jurídico / Direito Penal e Penitenciário",
+    "Classificação Temática Unificada / Jurídico / Processo / Processo Penal"
+   ],
+   "edivs": [
+    {
+     "norma": "Lei nº 9.613 de 03/03/1998",
+     "cod": "551489",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1",
+      "Art. 2",
+      "Art. 3",
+      "Art. 4",
+      "Art. 4-A",
+      "Art. 4-B",
+      "Art. 5",
+      "Art. 6",
+      "Art. 6, Parágrafo Único",
+      "Art. 7, caput, Inciso 1",
+      "Art. 7, § 1",
+      "Art. 7, § 2",
+      "Art. 8",
+      "Art. 8, § 2",
+      "Art. 9",
+      "Art. 10, caput, Inciso 3",
+      "Art. 10, caput, Inciso 4",
+      "Art. 10, caput, Inciso 5",
+      "Art. 11",
+      "Art. 11-A",
+      "Art. 12",
+      "Art. 16",
+      "Art. 17-A",
+      "Art. 17-B",
+      "Art. 17-C",
+      "Art. 17-D",
+      "Art. 17-E"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-12850-2013": {
+   "ok": true,
+   "normaNome": "Lei nº 12.850 de 02/08/2013",
+   "apelido": "LEI-12850-2013-08-02 , Lei de Combate ao Crime Organizado (2013) , Lei de Organização Criminosa (2013)",
+   "ementa": "Define organização criminosa e dispõe sobre a investigação criminal, os meios de obtenção da prova, infrações penais correlatas e o procedimento criminal; altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal); revoga a Lei nº 9.034, de 3 de maio de 1995; e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2013-08-02;12850",
+   "indexacao": [
+    "DEFINIÇÃO",
+    "ATIVIDADE",
+    "GRUPO",
+    "CRIMINOSO",
+    "CRIME ORGANIZADO",
+    "DIVISÃO",
+    "TAREFA",
+    "QUADRILHA",
+    "OBJETIVO",
+    "INFRAÇÃO PENAL",
+    "CRIME COMUM",
+    "DELITO",
+    "AMBITO INTERNACIONAL",
+    "POSSIBILIDADE",
+    "EXCEÇÃO",
+    "INFILTRAÇÃO",
+    "AGENTE DE POLICIA",
+    "SIGILO",
+    "INVESTIGAÇÃO POLICIAL",
+    "DADOS PESSOAIS",
+    "INFORMAÇÃO SIGILOSA",
+    "FIXAÇÃO",
+    "NORMAS",
+    "APURAÇÃO",
+    "RITO ORDINARIO",
+    "PROCESSO PENAL",
+    "PRAZO",
+    "REU PRESO",
+    "INVESTIGAÇÃO",
+    "VELOCIDADE",
+    "EFICIENCIA",
+    "AUTORIZAÇÃO",
+    "ACESSO",
+    "DADOS",
+    "DELEGADO DE POLICIA",
+    "MINISTERIO PUBLICO",
+    "EMPRESA",
+    "TRANSPORTE",
+    "TELEFONIA",
+    "INTERNET",
+    "PROVEDOR",
+    "INSTITUIÇÃO FINANCEIRA",
+    "CARTÃO DE CREDITO",
+    "DECLARAÇÃO",
+    "COLABORAÇÃO",
+    "RECOMPENSA",
+    "REDUÇÃO",
+    "PENA",
+    "PERDÃO JUDICIAL",
+    "CONTROLE",
+    "ATRASO",
+    "COLETA",
+    "PROVA",
+    "INFORMAÇÃO",
+    "FATO CRIMINOSO",
+    "CRIMES CONEXOS",
+    "COMINAÇÃO",
+    "CORRELAÇÃO",
+    "OBTENÇÃO"
+   ],
+   "catalogo": [
+    "DIREITO PENAL",
+    "PROCESSO PENAL"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Jurídico / Direito Penal e Penitenciário"
+   ],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 288",
+      "Art. 288, Parágrafo Único",
+      "Art. 342"
+     ]
+    },
+    {
+     "norma": "Decreto-Lei nº 3.689 de 03/10/1941",
+     "cod": "528776",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 9.034 de 03/05/1995",
+     "cod": "550910",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-13260-2016": {
+   "ok": true,
+   "normaNome": "Lei nº 13.260 de 16/03/2016",
+   "apelido": "LEI-13260-2016-03-16",
+   "ementa": "Regulamenta o disposto no inciso XLIII do art. 5º da Constituição Federal, disciplinando o terrorismo, tratando de disposições investigatórias e processuais e reformulando o conceito de organização terrorista; e altera as Leis nºs 7.960, de 21 de dezembro de 1989, e 12.850, de 2 de agosto de 2013.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2016-03-16;13260",
+   "indexacao": [
+    "ALTERAÇÃO",
+    "DEFINIÇÃO",
+    "CRIME",
+    "ORGANIZAÇÃO",
+    "TERRORISMO",
+    "TIPICIDADE",
+    "COMINAÇÃO",
+    "PENA",
+    "PROCEDIMENTO",
+    "INVESTIGAÇÃO",
+    "PROCESSO PENAL"
+   ],
+   "catalogo": [
+    "CRIME",
+    "TERRORISMO"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Jurídico / Direito Penal e Penitenciário",
+    "Classificação Temática Unificada / Jurídico / Processo / Processo Penal",
+    "Classificação Temática Unificada / Soberania, Defesa Nacional e Ordem Pública / Defesa do Estado e das Instituições Democráticas / Segurança Pública"
+   ],
+   "edivs": [
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Regulamentação Permanente de Norma",
+     "dispositivos": [
+      "Art. 5, caput, Inciso 43"
+     ]
+    },
+    {
+     "norma": "Lei nº 7.960 de 21/12/1989",
+     "cod": "549836",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1, caput, Inciso 3, Alínea p"
+     ]
+    },
+    {
+     "norma": "Lei nº 12.850 de 02/08/2013",
+     "cod": "591298",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1, § 2, Inciso 2"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-13869-2019": {
+   "ok": true,
+   "normaNome": "Lei nº 13.869 de 05/09/2019",
+   "apelido": "LEI-13869-2019-09-05 , Lei do Abuso de Autoridade (2019)",
+   "ementa": "Dispõe sobre os crimes de abuso de autoridade; altera a Lei nº 7.960, de 21 de dezembro de 1989, a Lei nº 9.296, de 24 de julho de 1996, a Lei nº 8.069, de 13 de julho de 1990, e a Lei nº 8.906, de 4 de julho de 1994; e revoga a Lei nº 4.898, de 9 de dezembro de 1965, e dispositivos do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal).",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2019-09-05;13869",
+   "indexacao": [
+    "CRIAÇÃO",
+    "LEI FEDERAL",
+    "DEFINIÇÃO",
+    "CRIME",
+    "ABUSO",
+    "AUTORIDADE",
+    "AGENTE PUBLICO",
+    "FIXAÇÃO",
+    "PENA",
+    "EFEITO",
+    "CONDENAÇÃO",
+    "PROCEDIMENTO",
+    "PROCESSO PENAL",
+    "ALTERAÇÃO",
+    "ESTATUTO",
+    "ORDEM DOS ADVOGADOS DO BRASIL (OAB)",
+    "VIOLAÇÃO",
+    "PRERROGATIVA DE FUNÇÃO",
+    "ADVOGADO"
+   ],
+   "catalogo": [
+    "DIREITO PENAL",
+    "PROCESSO PENAL"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Jurídico / Direito Penal e Penitenciário",
+    "Classificação Temática Unificada / Jurídico / Processo / Processo Penal",
+    "Classificação Temática Unificada / Administração Pública / Agentes Públicos"
+   ],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 150, § 2",
+      "Art. 350"
+     ]
+    },
+    {
+     "norma": "Lei nº 4.898 de 09/12/1965",
+     "cod": "546754",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 7.960 de 21/12/1989",
+     "cod": "549836",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 2, § 4-A",
+      "Art. 2, § 7",
+      "Art. 2, § 8"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.069 de 13/07/1990",
+     "cod": "549945",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 227-A, caput",
+      "Art. 227-A, Parágrafo Único"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.906 de 04/07/1994",
+     "cod": "550782",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 7-B, caput",
+      "Art. 7-B, caput",
+      "Art. 7-B, caput, Pena",
+      "Art. 7-B, caput, Pena"
+     ]
+    },
+    {
+     "norma": "Lei nº 9.296 de 24/07/1996",
+     "cod": "551172",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 10, caput",
+      "Art. 10, caput, Pena",
+      "Art. 10, Parágrafo Único"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-13964-2019": {
+   "ok": true,
+   "normaNome": "Lei nº 13.964 de 24/12/2019",
+   "apelido": "LEI-13964-2019-12-24 , Lei Anticrime (2019)",
+   "ementa": "Aperfeiçoa a legislação penal e processual penal.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2019-12-24;13964",
+   "indexacao": [
+    "APERFEIÇOAMENTO",
+    "LEGISLAÇÃO PENAL",
+    "LEGISLAÇÃO PROCESSUAL PENAL",
+    "ALTERAÇÃO",
+    "CODIGO DE PROCESSO PENAL",
+    "CODIGO DE PROCESSO PENAL MILITAR",
+    "CODIGO PENAL",
+    "LEI DE EXECUÇÃO PENAL",
+    "LEI FEDERAL",
+    "CRIME HEDIONDO",
+    "IMPROBIDADE ADMINISTRATIVA",
+    "ESCUTA TELEFONICA",
+    "LAVAGEM DE DINHEIRO",
+    "ESTATUTO",
+    "DESARMAMENTO",
+    "TRANSFERENCIA",
+    "PRESO",
+    "IDENTIFICAÇÃO CRIMINAL",
+    "JULGAMENTO",
+    "INVESTIGAÇÃO",
+    "ORGANIZAÇÃO",
+    "CRIME",
+    "DELAÇÃO PREMIADA",
+    "PROCEDIMENTO",
+    "FLAGRANTE",
+    "APRESENTAÇÃO",
+    "AGENTE",
+    "JUIZ",
+    "GARANTIA",
+    "COLETA",
+    "MATERIAL",
+    "PADRÃO GENETICO",
+    "HIPOTESE",
+    "CRIME CONTRA A LIBERDADE SEXUAL",
+    "POSSIBILIDADE",
+    "REU",
+    "NOMEAÇÃO",
+    "ADVOGADO",
+    "DEFENSOR",
+    "CRIME MILITAR"
+   ],
+   "catalogo": [
+    "DIREITO PENAL"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Jurídico / Direito Penal e Penitenciário",
+    "Classificação Temática Unificada / Jurídico / Processo / Processo Penal"
+   ],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 25, Parágrafo Único",
+      "Art. 51, caput",
+      "Art. 75, caput",
+      "Art. 75, § 1",
+      "Art. 83",
+      "Art. 91-A",
+      "Art. 116, caput, Inciso 2",
+      "Art. 116, caput, Inciso 3",
+      "Art. 116, caput, Inciso 4",
+      "Art. 121, § 2, Inciso 8",
+      "Art. 121, § 2, Inciso 8",
+      "Art. 141, § 2",
+      "Art. 141, § 2",
+      "Art. 157, § 2, Inciso 7",
+      "Art. 157, § 2-B",
+      "Art. 171",
+      "Art. 316, caput"
+     ]
+    },
+    {
+     "norma": "Decreto-Lei nº 3.689 de 03/10/1941",
+     "cod": "528776",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 3-A, caput",
+      "Art. 3-B",
+      "Art. 3-B, § 1",
+      "Art. 3-B, § 1",
+      "Art. 3-C",
+      "Art. 3-D, caput",
+      "Art. 3-D, Parágrafo Único",
+      "Art. 3-E, caput",
+      "Art. 3-F, caput",
+      "Art. 3-F, Parágrafo Único",
+      "Art. 13-B, § 1",
+      "Art. 14-A",
+      "Art. 14-A, § 3",
+      "Art. 14-A, § 3",
+      "Art. 14-A, § 4",
+      "Art. 14-A, § 4",
+      "Art. 14-A, § 5",
+      "Art. 14-A, § 5",
+      "Art. 28, caput",
+      "Art. 28, § 1",
+      "Art. 28, § 2",
+      "Art. 28-A",
+      "Art. 122, caput",
+      "Art. 122, Parágrafo Único",
+      "Art. 124-A, caput",
+      "Art. 133, caput",
+      "Art. 133, § 1",
+      "Art. 133, Parágrafo Único",
+      "Art. 133, § 2",
+      "Art. 133-A",
+      "Art. 157, § 5",
+      "Art. 158-A",
+      "Art. 158-B",
+      "Art. 158-C, caput",
+      "Art. 158-C, § 1",
+      "Art. 158-C, § 2",
+      "Art. 158-D",
+      "Art. 158-E",
+      "Art. 158-F, caput",
+      "Art. 158-F, Parágrafo Único",
+      "Art. 282",
+      "Art. 283, caput",
+      "Art. 287, caput",
+      "Art. 310",
+      "Art. 311, caput",
+      "Art. 312, caput",
+      "Art. 312, Parágrafo Único",
+      "Art. 312, § 2",
+      "Art. 313, Parágrafo Único",
+      "Art. 313, § 2",
+      "Art. 315",
+      "Art. 316, caput",
+      "Art. 316, Parágrafo Único",
+      "Art. 492",
+      "Art. 564, caput, Inciso 5",
+      "Art. 581, caput, Inciso 25",
+      "Art. 638, caput"
+     ]
+    },
+    {
+     "norma": "Decreto-Lei nº 1.002 de 21/10/1969",
+     "cod": "524627",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 16-A",
+      "Art. 16-A, § 3",
+      "Art. 16-A, § 3",
+      "Art. 16-A, § 4",
+      "Art. 16-A, § 4",
+      "Art. 16-A, § 5",
+      "Art. 16-A, § 5"
+     ]
+    },
+    {
+     "norma": "Lei nº 7.210 de 11/07/1984",
+     "cod": "549086",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 9-A",
+      "Art. 9-A, caput",
+      "Art. 9-A, caput",
+      "Art. 9-A, § 5",
+      "Art. 9-A, § 5",
+      "Art. 9-A, § 6",
+      "Art. 9-A, § 6",
+      "Art. 9-A, § 7",
+      "Art. 9-A, § 7",
+      "Art. 50, caput, Inciso 8",
+      "Art. 52",
+      "Art. 52, § 2",
+      "Art. 112",
+      "Art. 112, § 7",
+      "Art. 112, § 7",
+      "Art. 122, Parágrafo Único",
+      "Art. 122, § 2"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.038 de 28/05/1990",
+     "cod": "549914",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1, § 3"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.072 de 25/07/1990",
+     "cod": "549948",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1",
+      "Art. 2, § 2"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.429 de 02/06/1992",
+     "cod": "550305",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 17, § 1",
+      "Art. 17, § 10-A",
+      "Art. 17-A, caput",
+      "Art. 17-A, caput, Inciso 1",
+      "Art. 17-A, caput, Inciso 2",
+      "Art. 17-A, caput, Inciso 3",
+      "Art. 17-A, § 1",
+      "Art. 17-A, § 2",
+      "Art. 17-A, § 3",
+      "Art. 17-A, § 4",
+      "Art. 17-A, § 5"
+     ]
+    },
+    {
+     "norma": "Lei nº 9.296 de 24/07/1996",
+     "cod": "551172",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 8-A",
+      "Art. 8-A, § 2",
+      "Art. 8-A, § 2",
+      "Art. 8-A, § 4",
+      "Art. 8-A, § 4",
+      "Art. 10-A, caput",
+      "Art. 10-A, § 1",
+      "Art. 10-A, § 2"
+     ]
+    },
+    {
+     "norma": "Lei nº 9.613 de 03/03/1998",
+     "cod": "551489",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1, § 6"
+     ]
+    },
+    {
+     "norma": "Lei nº 10.826 de 22/12/2003",
+     "cod": "552702",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 16, caput",
+      "Art. 16, Parágrafo Único",
+      "Art. 16, § 2",
+      "Art. 17, caput",
+      "Art. 17, Parágrafo Único",
+      "Art. 17, § 2",
+      "Art. 18, caput",
+      "Art. 18, Parágrafo Único",
+      "Art. 20, caput",
+      "Art. 20, caput, Inciso 1",
+      "Art. 20, caput, Inciso 2",
+      "Art. 34-A"
+     ]
+    },
+    {
+     "norma": "Lei nº 11.343 de 23/08/2006",
+     "cod": "572128",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 33, § 1, Inciso 4"
+     ]
+    },
+    {
+     "norma": "Lei nº 11.671 de 08/05/2008",
+     "cod": "569510",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 2, Parágrafo Único",
+      "Art. 3",
+      "Art. 10, § 1",
+      "Art. 11-A, caput",
+      "Art. 11-B, caput"
+     ]
+    },
+    {
+     "norma": "Lei nº 12.037 de 01/10/2009",
+     "cod": "580260",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 7-A, caput",
+      "Art. 7-A, caput, Inciso 1",
+      "Art. 7-A, caput, Inciso 2",
+      "Art. 7-C"
+     ]
+    },
+    {
+     "norma": "Lei nº 12.694 de 24/07/2012",
+     "cod": "589617",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1-A"
+     ]
+    },
+    {
+     "norma": "Lei nº 12.850 de 02/08/2013",
+     "cod": "591298",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 2, § 8",
+      "Art. 2, § 9",
+      "Art. 3-A, caput",
+      "Art. 3-B",
+      "Art. 3-C",
+      "Art. 4",
+      "Art. 5, caput, Inciso 6",
+      "Art. 7, § 3",
+      "Art. 10-A",
+      "Art. 10-B, caput",
+      "Art. 10-B, Parágrafo Único",
+      "Art. 10-C, caput",
+      "Art. 10-C, Parágrafo Único",
+      "Art. 10-D, caput",
+      "Art. 10-D, Parágrafo Único",
+      "Art. 11, Parágrafo Único"
+     ]
+    },
+    {
+     "norma": "Lei nº 13.608 de 10/01/2018",
+     "cod": "26341985",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 4-A, caput",
+      "Art. 4-A, Parágrafo Único",
+      "Art. 4-B, caput",
+      "Art. 4-B, Parágrafo Único",
+      "Art. 4-C"
+     ]
+    },
+    {
+     "norma": "Lei nº 13.608 de 10/01/2018",
+     "cod": "26341985",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 13.756 de 12/12/2018",
+     "cod": "30740553",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 3"
+     ]
+    },
+    {
+     "norma": "Lei nº 13.756 de 12/12/2018",
+     "cod": "30740553",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-14133-2021": {
+   "ok": true,
+   "normaNome": "Lei nº 14.133 de 01/04/2021",
+   "apelido": "LEI-14133-2021-04-01 , Lei de Licitações e Contratos (2021)",
+   "ementa": "Lei de Licitações e Contratos Administrativos.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2021-04-01;14133",
+   "indexacao": [
+    "CONTRATO ADMINISTRATIVO",
+    "FORMALIZAÇÃO",
+    "REGISTRO",
+    "CADASTRO",
+    "GARANTIA",
+    "PRERROGATIVA",
+    "ADMINISTRAÇÃO PUBLICA",
+    "DURAÇÃO",
+    "EXECUÇÃO",
+    "ALTERAÇÃO",
+    "EXTINÇÃO",
+    "PAGAMENTO",
+    "RECEBIMENTO",
+    "NULIDADE",
+    "RESOLUÇÃO",
+    "CONTROVERSIA",
+    "IRREGULARIDADE",
+    "INFRAÇÃO",
+    "SANÇÃO",
+    "CONTROLE",
+    "LEI FEDERAL",
+    "DEFINIÇÃO",
+    "CRIME",
+    "PENA",
+    "LICITAÇÃO",
+    "PROCESSO",
+    "OBJETIVO",
+    "FASE",
+    "FORMA",
+    "CRITERIOS",
+    "JULGAMENTO",
+    "DIVULGAÇÃO",
+    "EDITAL",
+    "APRESENTAÇÃO",
+    "PROPOSTA",
+    "HABILITAÇÃO",
+    "ENCERRAMENTO",
+    "INEXIGIBILIDADE",
+    "DISPENSA",
+    "NORMAS GERAIS",
+    "AMBITO",
+    "ADMINISTRAÇÃO DIRETA",
+    "AUTARQUIA",
+    "FUNDAÇÃO PUBLICA",
+    "UNIÃO FEDERAL",
+    "ESTADOS",
+    "DISTRITO FEDERAL (DF)",
+    "MUNICIPIOS"
+   ],
+   "catalogo": [
+    "LICITAÇÃO",
+    "CONTRATO ADMINISTRATIVO"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Administração Pública / Licitação e Contratos"
+   ],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 377-E",
+      "Art. 377-F",
+      "Art. 377-G",
+      "Art. 377-H",
+      "Art. 377-I",
+      "Art. 377-J",
+      "Art. 377-K",
+      "Art. 377-M",
+      "Art. 377-N",
+      "Art. 377-O",
+      "Art. 377-P, caput"
+     ]
+    },
+    {
+     "norma": "Lei nº 6.383 de 07/12/1976",
+     "cod": "548259",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 29"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.666 de 21/06/1993",
+     "cod": "550542",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 8.666 de 21/06/1993",
+     "cod": "550542",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 89",
+      "Art. 90",
+      "Art. 91",
+      "Art. 92",
+      "Art. 93",
+      "Art. 94",
+      "Art. 95",
+      "Art. 96",
+      "Art. 97",
+      "Art. 98",
+      "Art. 99",
+      "Art. 100",
+      "Art. 101",
+      "Art. 102",
+      "Art. 103",
+      "Art. 104",
+      "Art. 105",
+      "Art. 106",
+      "Art. 107",
+      "Art. 108"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.987 de 13/02/1995",
+     "cod": "550863",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 8.987 de 13/02/1995",
+     "cod": "550863",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 2, caput, Inciso 2",
+      "Art. 2, caput, Inciso 3"
+     ]
+    },
+    {
+     "norma": "Lei nº 10.520 de 17/07/2002",
+     "cod": "552396",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 10.973 de 02/12/2004",
+     "cod": "552849",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 3, caput",
+      "Art. 3-A",
+      "Art. 4",
+      "Art. 5",
+      "Art. 20"
+     ]
+    },
+    {
+     "norma": "Lei nº 11.079 de 30/12/2004",
+     "cod": "570528",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 11.079 de 30/12/2004",
+     "cod": "570528",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 10, caput"
+     ]
+    },
+    {
+     "norma": "Lei Complementar nº 123 de 14/12/2006",
+     "cod": "572878",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 42",
+      "Art. 43",
+      "Art. 44",
+      "Art. 45",
+      "Art. 46",
+      "Art. 47",
+      "Art. 48",
+      "Art. 49"
+     ]
+    },
+    {
+     "norma": "Lei nº 11.952 de 25/06/2009",
+     "cod": "580175",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 6, § 1"
+     ]
+    },
+    {
+     "norma": "Lei nº 12.232 de 29/04/2010",
+     "cod": "575874",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 12.462 de 04/08/2011",
+     "cod": "584318",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1",
+      "Art. 2",
+      "Art. 3",
+      "Art. 4",
+      "Art. 5",
+      "Art. 6",
+      "Art. 7",
+      "Art. 8",
+      "Art. 9",
+      "Art. 10",
+      "Art. 11",
+      "Art. 12",
+      "Art. 13",
+      "Art. 14",
+      "Art. 15",
+      "Art. 16",
+      "Art. 17",
+      "Art. 18",
+      "Art. 19",
+      "Art. 20",
+      "Art. 21",
+      "Art. 22",
+      "Art. 23",
+      "Art. 24",
+      "Art. 25",
+      "Art. 26",
+      "Art. 27",
+      "Art. 28",
+      "Art. 29",
+      "Art. 30",
+      "Art. 31",
+      "Art. 32",
+      "Art. 33",
+      "Art. 34",
+      "Art. 35",
+      "Art. 36",
+      "Art. 37",
+      "Art. 38",
+      "Art. 39",
+      "Art. 40",
+      "Art. 41",
+      "Art. 42",
+      "Art. 43",
+      "Art. 44",
+      "Art. 44-A",
+      "Art. 45",
+      "Art. 46",
+      "Art. 47",
+      "Art. 47-A"
+     ]
+    },
+    {
+     "norma": "Lei nº 12.846 de 01/08/2013",
+     "cod": "591294",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 5"
+     ]
+    },
+    {
+     "norma": "Lei nº 13.105 de 16/03/2015",
+     "cod": "584917",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1048, caput, Inciso 4"
+     ]
+    },
+    {
+     "norma": "Lei nº 13.105 de 16/03/2015",
+     "cod": "584917",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 13.303 de 30/06/2016",
+     "cod": "602528",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 13.465 de 11/07/2017",
+     "cod": "17723904",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-15358-2026": {
+   "ok": true,
+   "normaNome": "Lei nº 15.358 de 24/03/2026",
+   "apelido": "LEI-15358-2026-03-24 , Lei Raul Jungmann; Marco Legal do Combate ao Crime Organizado no Brasil",
+   "ementa": "Institui o Marco Legal do Combate ao Crime Organizado no Brasil (Lei Raul Jungmann); tipifica os crimes de domínio social estruturado e de favorecimento ao domínio social estruturado; e altera os Decretos-Leis nºs 2.848, de 7 de dezembro de 1940 (Código Penal), e 3.689, de 3 de outubro de 1941 (Código de Processo Penal), e as Leis nºs 8.072, de 25 de julho de 1990 (Lei dos Crimes Hediondos), 7.210, de 11 de julho de 1984 (Lei de Execução Penal), 11.343, de 23 de agosto de 2006, 10.826, de 22 de dezembro de 2003, 9.613, de 3 de março de 1998, 4.737, de 15 de julho de 1965 (Código Eleitoral); 13.756, de 12 de dezembro de 2018; e 14.790, de 29 de dezembro de 2023.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2026-03-24;15358",
+   "indexacao": [
+    "ALTERAÇÃO",
+    "LEI FEDERAL",
+    "Fundo Nacional de Segurança Pública (FNSP)",
+    "OBJETIVO",
+    "GARANTIA",
+    "RECURSOS",
+    "APOIO",
+    "PROJETO",
+    "SEGURANÇA PUBLICA",
+    "PREVENÇÃO",
+    "VIOLENCIA",
+    "COMBATE",
+    "CRIME",
+    "ORGANIZAÇÃO CRIMINOSA",
+    "EXPANSÃO",
+    "MODERNIZAÇÃO",
+    "SISTEMA",
+    "PRISÃO",
+    "GESTÃO",
+    "COMPETENCIA",
+    "MINISTERIO DA JUSTIÇA E SEGURANÇA PUBLICA",
+    "COMPOSIÇÃO",
+    "CONSELHO GESTOR",
+    "DESTINAÇÃO",
+    "VALOR",
+    "CRIME HEDIONDO",
+    "HIPOTESE",
+    "DOMINIO SOCIAL ESTRUTURADO",
+    "FAVORECIMENTO",
+    "CODIGO ELEITORAL",
+    "PROIBIÇÃO",
+    "ALISTAMENTO ELEITORAL",
+    "REU PRESO",
+    "INCLUSÃO",
+    "CARATER PROVISORIO",
+    "CANCELAMENTO",
+    "TITULO DE ELEITOR",
+    "LEI DE EXECUÇÃO PENAL",
+    "PREVISÃO",
+    "MONITORAMENTO",
+    "ENCONTRO",
+    "CONDENADO",
+    "VINCULAÇÃO",
+    "CRIME PRATICADO POR ORGANIZAÇÃO CRIMINOSA ULTRAVIOLENTA",
+    "GRUPO PARAMILITAR OU MILICIA PRIVADA",
+    "MILICIA",
+    "CONTEUDO",
+    "COMUNICAÇÕES",
+    "ADVOGADO",
+    "ANALISE",
+    "JUIZO",
+    "INVESTIGAÇÃO",
+    "CUMPRIMENTO",
+    "PENA",
+    "PROGRESSÃO",
+    "REGIME",
+    "DROGA",
+    "FIXAÇÃO",
+    "CAUSA DE AUMENTO DE PENA",
+    "ARMA DE FOGO",
+    "CONCURSO",
+    "COMERCIO",
+    "ENTORPECENTE",
+    "DECRETO LEI FEDERAL",
+    "CODIGO PENAL",
+    "PENA DE PERDIMENTO",
+    "INSTRUMENTO",
+    "UTILIZAÇÃO",
+    "PRATICAGEM",
+    "SUSPENSÃO",
+    "INSCRIÇÃO",
+    "CADASTRO NACIONAL DE PESSOAS JURIDICAS (CNPJ)",
+    "REINCIDENCIA",
+    "HOMICIDIO QUALIFICADO",
+    "CIRCUNSTANCIA QUALIFICADORA",
+    "LESÃO CORPORAL",
+    "AMEAÇA GRAVE",
+    "SEQUESTRO",
+    "FURTO",
+    "ROUBO QUALIFICADO",
+    "EXTORSÃO",
+    "RECEPTAÇÃO",
+    "CODIGO DE PROCESSO PENAL",
+    "AUDIENCIA DE CUSTODIA",
+    "POSSIBILIDADE",
+    "VIDEOCONFERENCIA",
+    "PREVALENCIA",
+    "JURI",
+    "DIREITO",
+    "ENTREVISTA",
+    "PRIVACIDADE",
+    "OBRIGATORIEDADE",
+    "REPETIÇÃO",
+    "PROBLEMA",
+    "NATUREZA TECNICA",
+    "PRISÃO PREVENTIVA",
+    "APOSTA DE QUOTA FIXA",
+    "AUSENCIA",
+    "AUTORIZAÇÃO",
+    "BLOQUEIO",
+    "CONTAS",
+    "EXPLORAÇÃO",
+    "BANCO CENTRAL DO BRASIL (BACEN)",
+    "MINISTERIO DA FAZENDA (MF)",
+    "DISCIPLINA",
+    "PROCEDIMENTO",
+    "LAVAGEM DE DINHEIRO",
+    "DEPOSITO",
+    "AMBITO",
+    "ESTADOS",
+    "DISTRITO FEDERAL (DF)",
+    "INCORPORAÇÃO",
+    "PATRIMONIO PUBLICO",
+    "EFEITO",
+    "CONDENAÇÃO",
+    "MARCO LEGAL",
+    "CRIME ORGANIZADO",
+    "DEFINIÇÃO",
+    "PUNIÇÃO",
+    "CONDUTA",
+    "ORGANIZAÇÃO PARAMILITAR",
+    "CRIME CONTRA A PAZ PUBLICA",
+    "FUNCIONAMENTO",
+    "INSTITUIÇÕES",
+    "ADMINISTRAÇÃO PUBLICA",
+    "CARATER PRIVADO",
+    "TIPICIDADE",
+    "INTIMIDAÇÃO",
+    "COAÇÃO",
+    "CONSTRANGIMENTO",
+    "POPULAÇÃO",
+    "AGENTE PUBLICO",
+    "IMPOSIÇÃO",
+    "EXERCICIO",
+    "CONTROLE",
+    "DOMINIO",
+    "INFLUENCIA",
+    "AREAS",
+    "COMUNIDADE",
+    "TERRITORIO",
+    "EXPLOSIVOS",
+    "GAS",
+    "TOXICO",
+    "VENENO",
+    "AGENTE BIOLOGICO",
+    "QUIMICA",
+    "ARMA NUCLEAR",
+    "IMPEDIMENTO",
+    "ATUAÇÃO",
+    "FORÇA",
+    "VITIMA",
+    "INSTITUIÇÃO FINANCEIRA",
+    "TRANSPORTE DE VALOR",
+    "PENITENCIARIA",
+    "MEIOS DE TRANSPORTE",
+    "AERONAVE",
+    "AEROPORTO",
+    "PORTOS",
+    "FERROVIA",
+    "ESTAÇÃO RODOVIARIA",
+    "HOSPITAL",
+    "CASA DE SAUDE",
+    "ESTABELECIMENTO DE ENSINO",
+    "ESTADIO",
+    "SERVIÇOS PUBLICOS",
+    "ATIVIDADE ESSENCIAL",
+    "ENERGIA",
+    "ORGANIZAÇÃO MILITAR (OM)",
+    "PETROLEO",
+    "GAS LIQUEFEITO DE PETROLEO (GLP)",
+    "BANCO DE DADOS",
+    "INFORMATICA",
+    "TELEGRAFIA",
+    "TELEFONE",
+    "INFORMAÇÃO SIGILOSA",
+    "COMANDO",
+    "LIDERANÇA",
+    "AGENTE FINANCEIRO",
+    "MEMBROS",
+    "JUDICIARIO",
+    "MINISTERIO PUBLICO",
+    "AGENTE DE SEGURANÇA",
+    "CONEXÃO",
+    "FUNCIONARIO PUBLICO",
+    "INFILTRAÇÃO",
+    "CRIANÇA",
+    "ADOLESCENTE",
+    "RELAÇÕES INTERNACIONAIS",
+    "EXTRAÇÃO",
+    "RECURSOS MINERAIS",
+    "DIREITO AMBIENTAL",
+    "VEGETAÇÃO",
+    "TERRA PUBLICA",
+    "TERRA DEVOLUTA",
+    "AREA DE PRESERVAÇÃO PERMANENTE",
+    "UNIDADE DE CONSERVAÇÃO (UC)",
+    "VEICULO AEREO NÃO TRIPULADO (VANT)",
+    "VIGILANCIA",
+    "TECNOLOGIA",
+    "CRIPTOGRAFIA",
+    "ANISTIA",
+    "GRAÇA",
+    "INDULTO",
+    "FIANÇA",
+    "LIVRAMENTO CONDICIONAL",
+    "CONCESSÃO",
+    "AUXILIO-RECLUSÃO",
+    "JULGAMENTO",
+    "VARA CRIMINAL",
+    "COLEGIADO",
+    "DECRETAÇÃO",
+    "PROMOÇÃO",
+    "FUNDAÇÃO",
+    "DISTRIBUIÇÃO",
+    "MATERIAL",
+    "AQUISIÇÃO",
+    "IMPORTAÇÃO",
+    "EXPORTAÇÃO",
+    "PREPARAÇÃO",
+    "PRODUÇÃO",
+    "CONSENTIMENTO",
+    "FORNECIMENTO",
+    "INFORMAÇÕES",
+    "DECLARAÇÃO FALSA",
+    "NORMAS",
+    "PROCESSO PENAL",
+    "INQUERITO POLICIAL",
+    "PRAZO",
+    "DURAÇÃO",
+    "PRORROGAÇÃO",
+    "GRUPO TAREFA",
+    "PLANEJAMENTO",
+    "SIGILO",
+    "COOPERAÇÃO",
+    "AMBITO INTERNACIONAL",
+    "ATIVIDADE POLICIAL",
+    "INTELIGENCIA",
+    "MEDIDA CAUTELAR",
+    "CONFISCO DE BENS",
+    "Banco Nacional de Dados de Organizações Criminosas Ultraviolentas",
+    "Grupos Paramilitares ou Milícias Privadas",
+    "IDENTIFICAÇÃO",
+    "REGISTRO",
+    "MANUTENÇÃO",
+    "UNIÃO FEDERAL"
+   ],
+   "catalogo": [],
+   "classes": [
+    "Classificação Temática Unificada / Jurídico / Direito Penal e Penitenciário",
+    "Classificação Temática Unificada / Soberania, Defesa Nacional e Ordem Pública / Defesa do Estado e das Instituições Democráticas / Segurança Pública",
+    "Classificação Temática Unificada / Jurídico / Processo / Processo Penal"
+   ],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 91, caput, Inciso 2, apenas o Caput",
+      "Art. 91-A, § 5",
+      "Art. 92, caput, Inciso 4",
+      "Art. 92, § 3",
+      "Art. 92, § 4",
+      "Art. 121, § 2-D, apenas o Caput",
+      "Art. 121, § 2-D, Pena/Penalidade",
+      "Art. 129, § 3-A, apenas o Caput",
+      "Art. 129, § 3-A, Pena/Penalidade",
+      "Art. 129, § 8-A",
+      "Art. 147-C, caput",
+      "Art. 147-C, Pena/Penalidade",
+      "Art. 148, § 3, apenas o Caput",
+      "Art. 148, § 3, Pena/Penalidade",
+      "Art. 155, § 9",
+      "Art. 157, § 4",
+      "Art. 157, § 5, apenas o Caput",
+      "Art. 157, § 5, Pena/Penalidade",
+      "Art. 158, § 4",
+      "Art. 159, § 5",
+      "Art. 180, § 5",
+      "Art. 180, § 8"
+     ]
+    },
+    {
+     "norma": "Decreto-Lei nº 3.689 de 03/10/1941",
+     "cod": "528776",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 3-B, § 1",
+      "Art. 78, caput, Inciso 1",
+      "Art. 310",
+      "Art. 313, caput, Inciso 5",
+      "Art. 584, § 4"
+     ]
+    },
+    {
+     "norma": "Lei nº 4.737 de 15/07/1965",
+     "cod": "546590",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 5, caput, Inciso 4",
+      "Art. 71, caput, Inciso 6"
+     ]
+    },
+    {
+     "norma": "Lei nº 7.210 de 11/07/1984",
+     "cod": "549086",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 41-A, caput",
+      "Art. 41-A, § 1",
+      "Art. 41-A, § 2",
+      "Art. 41-B, caput",
+      "Art. 41-B, § 1",
+      "Art. 41-B, § 2",
+      "Art. 41-B, § 3",
+      "Art. 52, § 6",
+      "Art. 86, § 3",
+      "Art. 86, § 5",
+      "Art. 112",
+      "Art. 112, caput, Inciso 6-A"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.072 de 25/07/1990",
+     "cod": "549948",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1, Parágrafo Único, Inciso 8"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.213 de 24/07/1991",
+     "cod": "550089",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 80, caput"
+     ]
+    },
+    {
+     "norma": "Lei nº 9.613 de 03/03/1998",
+     "cod": "551489",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 4-A",
+      "Art. 7, caput, Inciso 1",
+      "Art. 7, § 1",
+      "Art. 7, § 2"
+     ]
+    },
+    {
+     "norma": "Lei nº 10.826 de 22/12/2003",
+     "cod": "552702",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 21-A, caput"
+     ]
+    },
+    {
+     "norma": "Lei nº 11.343 de 23/08/2006",
+     "cod": "572128",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 40-A, caput",
+      "Art. 40-A, Parágrafo Único"
+     ]
+    },
+    {
+     "norma": "Lei nº 13.756 de 12/12/2018",
+     "cod": "30740553",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 2",
+      "Art. 3, caput, Inciso 2, Alínea c",
+      "Art. 4",
+      "Art. 5"
+     ]
+    },
+    {
+     "norma": "Lei nº 13.756 de 12/12/2018",
+     "cod": "30740553",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 14.790 de 29/12/2023",
+     "cod": "38067061",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 21-A",
+      "Art. 24-A",
+      "Art. 24-B, caput",
+      "Art. 24-B, § 1",
+      "Art. 24-B, § 2",
+      "Art. 24-C, caput",
+      "Art. 39",
+      "Art. 40, caput, Inciso 3"
+     ]
+    },
+    {
+     "norma": "Lei nº 14.790 de 29/12/2023",
+     "cod": "38067061",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-15397-2026": {
+   "ok": true,
+   "normaNome": "Lei nº 15.397 de 30/04/2026",
+   "apelido": "LEI-15397-2026-04-30",
+   "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), a fim de majorar as penas previstas para os crimes de furto, roubo, estelionato, receptação, receptação de animal e interrupção ou perturbação de serviço telegráfico, telefônico, informático, telemático ou de informação de utilidade pública, bem como para tipificar os crimes de receptação de animal doméstico e de fraude bancária.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2026-04-30;15397",
+   "indexacao": [
+    "ALTERAÇÃO",
+    "DECRETO LEI FEDERAL",
+    "CODIGO PENAL",
+    "TIPICIDADE",
+    "CRIME",
+    "FURTO",
+    "AUMENTO",
+    "PENA",
+    "CAUSA DE AUMENTO DE PENA",
+    "REPOUSO",
+    "HORARIO NOTURNO",
+    "CIRCUNSTANCIA QUALIFICADORA",
+    "INCLUSÃO",
+    "BENS",
+    "DISTRITO FEDERAL (DF)",
+    "UTILIZAÇÃO",
+    "INSTRUMENTO",
+    "APARELHO ELETRONICO",
+    "INFORMATICA",
+    "TRANSPORTE",
+    "VEICULO AUTOMOTOR",
+    "PAIS ESTRANGEIRO",
+    "ACRESCIMO",
+    "TELEFONE CELULAR",
+    "COMPUTADOR",
+    "ARMA DE FOGO",
+    "FIO",
+    "TRANSMISSÃO",
+    "FORNECIMENTO",
+    "ENERGIA ELETRICA",
+    "TELEFONIA",
+    "DADOS",
+    "ROUBO",
+    "ROUBO QUALIFICADO",
+    "VIOLENCIA",
+    "RESULTADO",
+    "MORTE",
+    "ESTELIONATO",
+    "CESSÃO",
+    "CONTAS",
+    "FRAUDE",
+    "REVOGAÇÃO",
+    "NECESSIDADE",
+    "REPRESENTAÇÃO",
+    "VITIMA",
+    "Crime de Receptação de Animal",
+    "Animal Doméstico",
+    "INTERRUPÇÃO",
+    "PERTURBAÇÃO",
+    "TELEGRAFIA",
+    "TELEINFORMATICA",
+    "HIPOTESE",
+    "CALAMIDADE PUBLICA",
+    "DANOS",
+    "DESTRUIÇÃO",
+    "EQUIPAMENTOS"
+   ],
+   "catalogo": [],
+   "classes": [
+    "Classificação Temática Unificada / Jurídico / Direito Penal e Penitenciário",
+    "Classificação Temática Unificada / Soberania, Defesa Nacional e Ordem Pública / Defesa do Estado e das Instituições Democráticas / Segurança Pública",
+    "Classificação Temática Unificada / Economia e Desenvolvimento / Ciência, Tecnologia e Informática / Segurança Digital",
+    "Classificação Temática Unificada / Jurídico / Processo / Processo Penal"
+   ],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 155",
+      "Art. 157",
+      "Art. 157, § 3, Inciso 1",
+      "Art. 171",
+      "Art. 171, § 5, apenas o Caput",
+      "Art. 171, § 5, Inciso 1",
+      "Art. 171, § 5, Inciso 2",
+      "Art. 171, § 5, Inciso 3",
+      "Art. 171, § 5, Inciso 4",
+      "Art. 180, Pena/Penalidade",
+      "Art. 180-A, caput",
+      "Art. 180-A, Pena/Penalidade",
+      "Art. 266, Pena/Penalidade",
+      "Art. 266, § 2, apenas o Caput",
+      "Art. 266, § 2, Inciso 1",
+      "Art. 266, § 2, Inciso 2"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-8072-1990": {
+   "ok": true,
+   "normaNome": "Lei nº 8.072 de 25/07/1990",
+   "apelido": "LEI-8072-1990-07-25 , Lei dos Crimes Hediondos (1990)",
+   "ementa": "Dispõe sobre os crimes hediondos, nos termos do art. 5º, inciso XLIII, da Constituição Federal, e determina outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-07-25;8072",
+   "indexacao": [
+    "FIXAÇÃO",
+    "PENALIDADE",
+    "CRIME HEDIONDO",
+    "NORMAS",
+    "CLASSIFICAÇÃO",
+    "LATROCINIO",
+    "EXTORSÃO",
+    "ESTUPRO",
+    "ATENTADO AO PUDOR",
+    "ENVENENAMENTO",
+    "AGUA POTAVEL",
+    "SUBSTANCIA MEDICINAL",
+    "ALIMENTOS",
+    "GENOCIDIO"
+   ],
+   "catalogo": [
+    "CRIME HEDIONDO"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 33",
+      "Art. 83, caput, Inciso 5",
+      "Art. 157, § 3",
+      "Art. 158, § 2",
+      "Art. 159",
+      "Art. 159, § 4",
+      "Art. 213",
+      "Art. 213, Parágrafo Único",
+      "Art. 214",
+      "Art. 223",
+      "Art. 223, Parágrafo Único",
+      "Art. 224",
+      "Art. 267",
+      "Art. 267, § 1",
+      "Art. 269",
+      "Art. 270",
+      "Art. 285",
+      "Art. 288"
+     ]
+    },
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Regulamentação Permanente de Norma",
+     "dispositivos": [
+      "Art. 5, caput, Inciso 43"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-10741-2003": {
+   "ok": true,
+   "normaNome": "Lei nº 10.741 de 01/10/2003",
+   "apelido": "LEI-10741-2003-10-01 , Lei do Idoso (2003) , Estatuto da Pessoa Idosa (2003) , Estatuto do Idoso (2003)",
+   "ementa": "Dispõe sobre o Estatuto da Pessoa Idosa e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2003-10-01;10741",
+   "indexacao": [
+    "CRIAÇÃO",
+    "ESTATUTO",
+    "PESSOA IDOSA",
+    "DEFINIÇÃO",
+    "DIREITOS",
+    "ASSISTENCIA",
+    "ATENDIMENTO",
+    "PRESERVAÇÃO",
+    "CIDADANIA",
+    "DIREITO A VIDA",
+    "DIREITO A SAUDE",
+    "ATIVIDADE CULTURAL",
+    "EDUCAÇÃO",
+    "LAZER",
+    "ESPORTE",
+    "TRANSPORTE GRATUITO",
+    "PRIORIDADE",
+    "PROCEDIMENTO JUDICIAL",
+    "HABITAÇÃO",
+    "PESSOA FISICA",
+    "LIMITE DE IDADE"
+   ],
+   "catalogo": [
+    "ESTATUTO",
+    "PESSOA IDOSA"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Política Social / Proteção Social / Idosos"
+   ],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 61",
+      "Art. 121",
+      "Art. 133",
+      "Art. 140",
+      "Art. 141",
+      "Art. 148",
+      "Art. 159",
+      "Art. 183",
+      "Art. 244"
+     ]
+    },
+    {
+     "norma": "Decreto-Lei nº 3.688 de 03/10/1941",
+     "cod": "528775",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 21"
+     ]
+    },
+    {
+     "norma": "Lei nº 6.368 de 21/10/1976",
+     "cod": "548244",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 18, caput, Inciso 3"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.842 de 04/01/1994",
+     "cod": "550718",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 7"
+     ]
+    },
+    {
+     "norma": "Lei nº 9.455 de 07/04/1997",
+     "cod": "551331",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1, § 4, Inciso 2"
+     ]
+    },
+    {
+     "norma": "Lei nº 9.656 de 03/06/1998",
+     "cod": "551532",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 14",
+      "Art. 15",
+      "Art. 16"
+     ]
+    },
+    {
+     "norma": "Lei nº 10.048 de 08/11/2000",
+     "cod": "551924",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-8069-1990": {
+   "ok": true,
+   "normaNome": "Lei nº 8.069 de 13/07/1990",
+   "apelido": "LEI-8069-1990-07-13 , Estatuto da Criança e do Adolescente (1990) (ECA)",
+   "ementa": "Dispõe sobre o ESTATUTO DA CRIANÇA E DO ADOLESCENTE, e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-07-13;8069",
+   "indexacao": [
+    "NORMAS",
+    "ESTATUTO",
+    "CRIANÇA",
+    "ADOLESCENTE"
+   ],
+   "catalogo": [
+    "ESTATUTO DA CRIANÇA E DO ADOLESCENTE"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 27",
+      "Art. 121, § 4",
+      "Art. 129, § 7",
+      "Art. 129, § 8",
+      "Art. 136, § 3",
+      "Art. 213, Parágrafo Único",
+      "Art. 214, Parágrafo Único",
+      "Art. 218"
+     ]
+    },
+    {
+     "norma": "Lei nº 883 de 21/10/1949",
+     "cod": "542467",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 4.513 de 01/12/1964",
+     "cod": "546365",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 5.594 de 21/07/1970",
+     "cod": "547464",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 6.015 de 31/12/1973",
+     "cod": "547891",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 6.697 de 10/10/1979",
+     "cod": "548573",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 227",
+      "Art. 228",
+      "Art. 229"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.029 de 12/04/1990",
+     "cod": "549905",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-9296-1996": {
+   "ok": true,
+   "normaNome": "Lei nº 9.296 de 24/07/1996",
+   "apelido": "LEI-9296-1996-07-24 , Lei da Escuta Telefônica (1996)",
+   "ementa": "Regulamenta o inciso XII, parte final, do art. 5° da Constituição Federal.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1996-07-24;9296",
+   "indexacao": [
+    "REGULAMENTAÇÃO",
+    "NORMAS",
+    "CORRELAÇÃO",
+    "QUEBRA DE SIGILO",
+    "INVIOLABILIDADE",
+    "GARANTIA",
+    "PRIVACIDADE",
+    "COMUNICAÇÕES",
+    "INTERCEPTAÇÃO",
+    "ESCUTA TELEFONICA",
+    "TELEFONE",
+    "TELEINFORMATICA",
+    "DESTINAÇÃO",
+    "INSTRUÇÃO CRIMINAL",
+    "HIPOTESE",
+    "AUTORIZAÇÃO",
+    "JUIZ",
+    "FIXAÇÃO",
+    "CRITERIOS",
+    "PROIBIÇÃO",
+    "CRIME",
+    "PENA",
+    "AUSENCIA"
+   ],
+   "catalogo": [
+    "QUEBRA DE SIGILO",
+    "COMUNICAÇÕES"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Regulamentação Permanente de Norma",
+     "dispositivos": [
+      "Art. 5, caput, Inciso 12"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-9503-1997": {
+   "ok": true,
+   "normaNome": "Lei nº 9.503 de 23/09/1997",
+   "apelido": "LEI-9503-1997-09-23 , Código de Trânsito Brasileiro (1997) (CTB)",
+   "ementa": "Institui o Código de Trânsito Brasileiro.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1997-09-23;9503",
+   "indexacao": [
+    "NORMAS",
+    "CIRCULAÇÃO",
+    "TRANSITO",
+    "VIA TERRESTRE",
+    "TERRITORIO NACIONAL"
+   ],
+   "catalogo": [
+    "CODIGO DE TRANSITO BRASILEIRO (CTB)"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Lei nº 5.108 de 21/09/1966",
+     "cod": "546966",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Decreto-Lei nº 237 de 28/02/1967",
+     "cod": "523114",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1",
+      "Art. 2",
+      "Art. 3",
+      "Art. 4",
+      "Art. 5",
+      "Art. 6",
+      "Art. 11"
+     ]
+    },
+    {
+     "norma": "Decreto-Lei nº 584 de 16/05/1969",
+     "cod": "523801",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Decreto-Lei nº 912 de 02/10/1969",
+     "cod": "524449",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 5.820 de 10/11/1972",
+     "cod": "547696",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 6.124 de 25/10/1974",
+     "cod": "548000",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 6.308 de 15/12/1975",
+     "cod": "548184",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 6.369 de 27/10/1976",
+     "cod": "548245",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 6.731 de 04/12/1979",
+     "cod": "548607",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 7.031 de 20/09/1982",
+     "cod": "548907",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 7.052 de 02/12/1982",
+     "cod": "548928",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Decreto-Lei nº 2.448 de 21/07/1988",
+     "cod": "527509",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 8.102 de 10/12/1990",
+     "cod": "549978",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 8.212 de 24/07/1991",
+     "cod": "550088",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 27"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-4737-1965": {
+   "ok": true,
+   "normaNome": "Lei nº 4.737 de 15/07/1965",
+   "apelido": "LEI-4737-1965-07-15 , Código Eleitoral (1965)",
+   "ementa": "Institui o Código Eleitoral.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1965-07-15;4737",
+   "indexacao": [
+    "PARTIDO POLITICO",
+    "CODIGO ELEITORAL"
+   ],
+   "catalogo": [
+    "CODIGO ELEITORAL"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 138",
+      "Art. 139",
+      "Art. 140",
+      "Art. 141",
+      "Art. 146",
+      "Art. 165"
+     ]
+    },
+    {
+     "norma": "Lei nº 85 de 06/09/1947",
+     "cod": "541021",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 1.164 de 24/07/1950",
+     "cod": "542787",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 1.266 de 08/12/1950",
+     "cod": "542911",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 4.410 de 24/09/1964",
+     "cod": "546260",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-7492-1986": {
+   "ok": true,
+   "normaNome": "Lei nº 7.492 de 16/06/1986",
+   "apelido": "LEI-7492-1986-06-16 , Lei dos Crimes contra o Sistema Financeiro Nacional (1986) , Lei do Colarinho Branco (1986)",
+   "ementa": "Define os crimes contra o sistema financeiro nacional e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1986-06-16;7492",
+   "indexacao": [
+    "DEFINIÇÃO",
+    "INSTITUIÇÃO FINANCEIRA",
+    "EFEITO",
+    "CRIME",
+    "SISTEMA FINANCEIRO NACIONAL",
+    "CRIME DO COLARINHO BRANCO",
+    "NORMAS",
+    "APLICAÇÃO",
+    "PROCEDIMENTO"
+   ],
+   "catalogo": [
+    "SISTEMA FINANCEIRO NACIONAL"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 49"
+     ]
+    },
+    {
+     "norma": "Lei nº 5.172 de 25/10/1966",
+     "cod": "547034",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-11105-2005": {
+   "ok": true,
+   "normaNome": "Lei nº 11.105 de 24/03/2005",
+   "apelido": "LEI-11105-2005-03-24 , Lei da Engenharia Genética (1995) , Lei de Biossegurança (2005)",
+   "ementa": "Regulamenta os incisos II, IV e V do § 1º do art. 225 da Constituição Federal, estabelece normas de segurança e mecanismos de fiscalização de atividades que envolvam organismos geneticamente modificados - OGM e seus derivados, cria o Conselho Nacional de Biossegurança - CNBS, reestrutura a Comissão Técnica Nacional de Biossegurança - CTNBio, dispõe sobre a Política Nacional de Biossegurança - PNB, revoga a Lei nº 8.974, de 5 de janeiro de 1995, e a Medida Provisória nº 2.191-9, de 23 de agosto de 2001, e os arts. 5º, 6º, 7º, 8º, 9º, 10 e 16 da Lei nº 10.814, de 15 de dezembro de 2003, e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2005-03-24;11105",
+   "indexacao": [
+    "DEFINIÇÃO",
+    "COMPETENCIA",
+    "COMPOSIÇÃO",
+    "Comissão Técnica Nacional de Biossegurança (CTNBIO)",
+    "CRIAÇÃO",
+    "CONSELHO NACIONAL",
+    "SEGURANÇA",
+    "BIOTECNOLOGIA",
+    "REGULAMENTAÇÃO",
+    "NORMAS",
+    "FISCALIZAÇÃO",
+    "CULTIVO",
+    "PRODUÇÃO",
+    "MANIPULAÇÃO",
+    "TRANSPORTE",
+    "IMPORTAÇÃO",
+    "EXPORTAÇÃO",
+    "ARMAZENAGEM",
+    "PESQUISA CIENTIFICA",
+    "DESENVOLVIMENTO TECNOLOGICO",
+    "COMERCIALIZAÇÃO",
+    "CONSUMO",
+    "UTILIZAÇÃO",
+    "PRODUTO BIOLOGICO",
+    "DERIVADOS",
+    "ALTERAÇÃO",
+    "PADRÃO GENETICO",
+    "PRODUTO TRANSGENICO"
+   ],
+   "catalogo": [
+    "DESENVOLVIMENTO CIENTIFICO",
+    "GENETICA"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Política Social / Saúde"
+   ],
+   "edivs": [
+    {
+     "norma": "Lei nº 6.938 de 31/08/1981",
+     "cod": "548814",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Anexo 8"
+     ]
+    },
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Regulamentação Permanente de Norma",
+     "dispositivos": [
+      "Art. 225, § 1, Inciso 2",
+      "Art. 225, § 1, Inciso 4",
+      "Art. 225, § 1, Inciso 5"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.974 de 05/01/1995",
+     "cod": "550850",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Medida Provisória nº 2.191-9 de 23/08/2001",
+     "cod": "559075",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 10.814 de 15/12/2003",
+     "cod": "552690",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 5",
+      "Art. 6",
+      "Art. 7",
+      "Art. 8",
+      "Art. 9",
+      "Art. 10",
+      "Art. 16"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-8078-1990": {
+   "ok": true,
+   "normaNome": "Lei nº 8.078 de 11/09/1990",
+   "apelido": "LEI-8078-1990-09-11 , Código de Proteção e Defesa do Consumidor (CPDC) , Código de Defesa do Consumidor (1990) (CDC)",
+   "ementa": "Dispõe sobre a proteção do consumidor e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1990-09-11;8078",
+   "indexacao": [
+    "NORMAS",
+    "PROTEÇÃO",
+    "CONSUMIDOR",
+    "APROVAÇÃO",
+    "CODIGO"
+   ],
+   "catalogo": [
+    "CODIGO DE DEFESA DO CONSUMIDOR"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Lei nº 556 de 25/06/1850",
+     "cod": "542035",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 7.347 de 24/07/1985",
+     "cod": "549223",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1, caput, Inciso 4",
+      "Art. 5, caput, Inciso 2",
+      "Art. 5, § 3",
+      "Art. 5, § 4",
+      "Art. 5, § 5",
+      "Art. 5, § 6",
+      "Art. 15",
+      "Art. 17",
+      "Art. 17, Parágrafo Único",
+      "Art. 18",
+      "Art. 21"
+     ]
+    },
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Regulamentação Permanente de Norma",
+     "dispositivos": [
+      "Art. 5, caput, Inciso 32",
+      "Art. 170"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "DEL-3688-1941": {
+   "ok": true,
+   "normaNome": "Decreto-Lei nº 3.688 de 03/10/1941",
+   "apelido": "DEL-3688-1941-10-03 , Lei das Contravenções Penais (1941)",
+   "ementa": "Lei das Contravenções Penais.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:decreto.lei:1941-10-03;3688",
+   "indexacao": [
+    "LEI DAS CONTRAVENÇÕES PENAIS"
+   ],
+   "catalogo": [
+    "LEI DAS CONTRAVENÇÕES PENAIS"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 21",
+      "Art. 75"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-1521-1951": {
+   "ok": true,
+   "normaNome": "Lei nº 1.521 de 26/12/1951",
+   "apelido": "LEI-1521-1951-12-26 , Lei dos Crimes Contra a Economia Popular (1951)",
+   "ementa": "Altera dispositivos da legislação vigente sôbre crimes contra a economia popular.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1951-12-26;1521",
+   "indexacao": [
+    "DEFINIÇÃO",
+    "CRIME CONTRA A ECONOMIA POPULAR",
+    "JULGAMENTO"
+   ],
+   "catalogo": [
+    "ECONOMIA POPULAR"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 77",
+      "Art. 83",
+      "Art. 175",
+      "Art. 177"
+     ]
+    },
+    {
+     "norma": "Decreto-Lei nº 3.689 de 03/10/1941",
+     "cod": "528776",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-12037-2009": {
+   "ok": true,
+   "normaNome": "Lei nº 12.037 de 01/10/2009",
+   "apelido": "LEI-12037-2009-10-01",
+   "ementa": "Dispõe sobre a identificação criminal do civilmente identificado, regulamentando o art. 5º, inciso LVIII, da Constituição Federal.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2009-10-01;12037",
+   "indexacao": [
+    "DEFINIÇÃO",
+    "CRITERIOS",
+    "REALIZAÇÃO",
+    "IDENTIFICAÇÃO CRIMINAL",
+    "UTILIZAÇÃO",
+    "DOCUMENTO",
+    "ATESTADO",
+    "IDENTIFICAÇÃO CIVIL"
+   ],
+   "catalogo": [
+    "IDENTIFICAÇÃO CRIMINAL"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Jurídico / Processo / Processo Penal"
+   ],
+   "edivs": [
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 5, caput, Inciso 58"
+     ]
+    },
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Regulamentação Permanente de Norma",
+     "dispositivos": [
+      "Art. 5, caput, Inciso 58"
+     ]
+    },
+    {
+     "norma": "Lei nº 10.054 de 07/12/2000",
+     "cod": "551930",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-12737-2012": {
+   "ok": true,
+   "normaNome": "Lei nº 12.737 de 30/11/2012",
+   "apelido": "LEI-12737-2012-11-30 , Lei de Crimes Cibernéticos (2012) , Lei Carolina Dieckmann (2012)",
+   "ementa": "Dispõe sobre a tipificação criminal de delitos informáticos; altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 - Código Penal; e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2012-11-30;12737",
+   "indexacao": [
+    "TIPICIDADE",
+    "CRIME",
+    "INVASÃO",
+    "COMPUTADOR",
+    "PERTURBAÇÃO",
+    "FALSIFICAÇÃO",
+    "DISPOSITIVOS",
+    "INFORMATICA",
+    "INTERNET"
+   ],
+   "catalogo": [
+    "CODIGO PENAL"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Jurídico / Direito Penal e Penitenciário",
+    "Classificação Temática Unificada / Economia e Desenvolvimento / Ciência, Tecnologia e Informática / Segurança Digital"
+   ],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 154-A",
+      "Art. 154-B",
+      "Art. 248, Parágrafo Único",
+      "Art. 266, § 1",
+      "Art. 266, § 2"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-14344-2022": {
+   "ok": true,
+   "normaNome": "Lei nº 14.344 de 24/05/2022",
+   "apelido": "LEI-14344-2022-05-24 , Lei Henry Borel",
+   "ementa": "Cria mecanismos para a prevenção e o enfrentamento da violência doméstica e familiar contra a criança e o adolescente, nos termos do § 8º do art. 226 e do § 4º do art. 227 da Constituição Federal e das disposições específicas previstas em tratados, convenções ou acordos internacionais de que o Brasil seja parte; altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e as Leis nºs 7.210, de 11 de julho de 1984 (Lei de Execução Penal), 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), 8.072, de 25 de julho de 1990 (Lei de Crimes Hediondos), e 13.431, de 4 de abril de 2017, que estabelece o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência; e dá outras providências.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2022-05-24;14344",
+   "indexacao": [
+    "PREVENÇÃO",
+    "COMBATE",
+    "VIOLENCIA DOMESTICA",
+    "CRIANÇA",
+    "ADOLESCENTE",
+    "VIOLAÇÃO",
+    "DIREITOS HUMANOS",
+    "BANCO DE DADOS",
+    "ESTATISTICA",
+    "SISTEMA",
+    "PROTEÇÃO",
+    "ASSISTENCIA",
+    "ATENDIMENTO",
+    "POLICIA",
+    "PROCEDIMENTO",
+    "TUTELA JURISDICIONAL",
+    "URGENCIA",
+    "COMPETENCIA",
+    "MINISTERIO PUBLICO",
+    "DENUNCIANTE",
+    "DEFINIÇÃO",
+    "CRIME",
+    "CRIAÇÃO",
+    "DIA NACIONAL",
+    "ALTERAÇÃO",
+    "ESTATUTO DA CRIANÇA E DO ADOLESCENTE",
+    "GARANTIA",
+    "TRATAMENTO",
+    "SAUDE",
+    "VITIMA",
+    "ATUAÇÃO",
+    "UNIÃO FEDERAL",
+    "ESTADOS",
+    "DISTRITO FEDERAL (DF)",
+    "MUNICIPIOS",
+    "ENTIDADE",
+    "CULTURA",
+    "LAZER",
+    "ESPORTE",
+    "VIOLENCIA",
+    "CONSELHO TUTELAR",
+    "INAPLICABILIDADE",
+    "LEI FEDERAL",
+    "JUIZADO ESPECIAL CRIMINAL",
+    "PROIBIÇÃO",
+    "PENA PECUNIARIA",
+    "CODIGO PENAL",
+    "CONTAGEM",
+    "PRAZO",
+    "PRESCRIÇÃO",
+    "MENOR",
+    "CIRCUNSTANCIA QUALIFICADORA",
+    "CAUSA DE AUMENTO DE PENA",
+    "HOMICIDIO",
+    "LEI DE EXECUÇÃO PENAL",
+    "AUTORIZAÇÃO",
+    "JUIZ",
+    "DETERMINAÇÃO",
+    "COMPARECIMENTO",
+    "AGRESSOR",
+    "PROGRAMA",
+    "RECUPERAÇÃO",
+    "EDUCAÇÃO",
+    "CRIME HEDIONDO",
+    "HOMICIDIO QUALIFICADO",
+    "PROCESSO PENAL",
+    "FORMA",
+    "PATRIMONIO"
+   ],
+   "catalogo": [],
+   "classes": [
+    "Classificação Temática Unificada / Política Social / Proteção Social / Crianças e Adolescentes",
+    "Classificação Temática Unificada / Jurídico / Direito Penal e Penitenciário"
+   ],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 111, caput, Inciso 5",
+      "Art. 121",
+      "Art. 141, caput, Inciso 4"
+     ]
+    },
+    {
+     "norma": "Lei nº 7.210 de 11/07/1984",
+     "cod": "549086",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 152, Parágrafo Único"
+     ]
+    },
+    {
+     "norma": "Constituição da República Federativa do Brasil",
+     "cod": "579494",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 226, § 8",
+      "Art. 227, § 4"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.069 de 13/07/1990",
+     "cod": "549945",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 18-B, caput, Inciso 6",
+      "Art. 70-A",
+      "Art. 70-B, caput",
+      "Art. 136",
+      "Art. 201, caput, Inciso 13",
+      "Art. 226, § 1",
+      "Art. 226, § 2"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.069 de 13/07/1990",
+     "cod": "549945",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 8.072 de 25/07/1990",
+     "cod": "549948",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1, caput, Inciso 1"
+     ]
+    },
+    {
+     "norma": "Lei nº 10.826 de 22/12/2003",
+     "cod": "552702",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 6"
+     ]
+    },
+    {
+     "norma": "Lei nº 11.340 de 07/08/2006",
+     "cod": "572125",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 13.431 de 04/04/2017",
+     "cod": "17674073",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 13.431 de 04/04/2017",
+     "cod": "17674073",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 4, § 5"
+     ]
+    },
+    {
+     "norma": "Lei nº 13.431 de 04/04/2017",
+     "cod": "17674073",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-13146-2015": {
+   "ok": true,
+   "normaNome": "Lei nº 13.146 de 06/07/2015",
+   "apelido": "LEI-13146-2015-07-06 , Lei Brasileira de Inclusão (2015) (LBI) , Lei Brasileira de Inclusão da Pessoa com Deficiência (2015) , Estatuto da Pessoa com Deficiência (2015)",
+   "ementa": "Institui a Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência).",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2015-07-06;13146",
+   "indexacao": [
+    "ESTATUTO",
+    "INCLUSÃO",
+    "PESSOA COM DEFICIENCIA",
+    "DEFICIENTE MENTAL",
+    "DEFICIENTE FISICO",
+    "PROMOÇÃO",
+    "DIREITOS E GARANTIAS FUNDAMENTAIS",
+    "INCLUSÃO SOCIAL",
+    "CIDADANIA",
+    "ACESSIBILIDADE",
+    "IGUALDADE",
+    "AUSENCIA",
+    "DISCRIMINAÇÃO",
+    "PRIORIDADE",
+    "DIREITO A VIDA",
+    "DIREITO A SAUDE",
+    "REABILITAÇÃO",
+    "HABILITAÇÃO",
+    "EDUCAÇÃO",
+    "DIREITOS SOCIAIS",
+    "TRABALHO",
+    "PREVIDENCIA SOCIAL",
+    "ASSISTENCIA SOCIAL",
+    "LAZER",
+    "CULTURA",
+    "ESPORTE",
+    "TURISMO",
+    "TRANSPORTE",
+    "MOBILIDADE URBANA",
+    "INFORMAÇÃO",
+    "MEIOS DE COMUNICAÇÃO",
+    "DIREITOS POLITICOS",
+    "JUDICIARIO",
+    "CRIAÇÃO",
+    "LEI PENAL",
+    "CRIME",
+    "INFRAÇÃO"
+   ],
+   "catalogo": [
+    "DIREITOS SOCIAIS"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Política Social / Proteção Social / Direitos Humanos e Minorias"
+   ],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 5.452 de 01/05/1943",
+     "cod": "530547",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 428, caput, Inciso 1",
+      "Art. 428, § 6",
+      "Art. 428, § 8"
+     ]
+    },
+    {
+     "norma": "Lei nº 7.853 de 24/10/1989",
+     "cod": "549729",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 3",
+      "Art. 8"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.036 de 11/05/1990",
+     "cod": "549912",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 20, caput, Inciso 18"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.078 de 11/09/1990",
+     "cod": "549954",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 6, Parágrafo Único",
+      "Art. 43, § 6"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.213 de 24/07/1991",
+     "cod": "550089",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 16, caput, Inciso 1",
+      "Art. 16, caput, Inciso 3",
+      "Art. 77, § 2, Inciso 2",
+      "Art. 93, § 1",
+      "Art. 93, § 2",
+      "Art. 93, § 3",
+      "Art. 110-A"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.313 de 23/12/1991",
+     "cod": "550189",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 2, § 3"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.429 de 02/06/1992",
+     "cod": "550305",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 11, caput, Inciso 9"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.666 de 21/06/1993",
+     "cod": "550542",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 3, § 2, Inciso 5",
+      "Art. 3, § 5, Inciso 1",
+      "Art. 3, § 5, Inciso 2",
+      "Art. 66-A",
+      "Art. 66-A, Parágrafo Único"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.742 de 07/12/1993",
+     "cod": "550618",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 20, § 2",
+      "Art. 20, § 9",
+      "Art. 20, § 11"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.989 de 24/02/1995",
+     "cod": "550865",
+     "comentario": "Declaração Permanente de Prorrogação de Prazo da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 9.008 de 21/03/1995",
+     "cod": "550884",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1, § 2, Inciso 2"
+     ]
+    },
+    {
+     "norma": "Lei nº 9.029 de 13/04/1995",
+     "cod": "550905",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1",
+      "Art. 3",
+      "Art. 4, caput, Inciso 1"
+     ]
+    },
+    {
+     "norma": "Lei nº 9.250 de 26/12/1995",
+     "cod": "551126",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 35, § 5"
+     ]
+    },
+    {
+     "norma": "Lei nº 9.503 de 23/09/1997",
+     "cod": "551379",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 2, Parágrafo Único",
+      "Art. 86-A",
+      "Art. 147-A",
+      "Art. 147-A, § 1",
+      "Art. 147-A, § 2",
+      "Art. 181, caput, Inciso 17"
+     ]
+    },
+    {
+     "norma": "Lei nº 9.615 de 24/03/1998",
+     "cod": "551491",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 56, caput, Inciso 6",
+      "Art. 56, § 1"
+     ]
+    },
+    {
+     "norma": "Lei nº 10.048 de 08/11/2000",
+     "cod": "551924",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1"
+     ]
+    },
+    {
+     "norma": "Lei nº 10.095 de 19/12/2000",
+     "cod": "551971",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 2",
+      "Art. 3",
+      "Art. 3, Parágrafo Único",
+      "Art. 9, Parágrafo Único",
+      "Art. 10-A",
+      "Art. 12-A"
+     ]
+    },
+    {
+     "norma": "Lei nº 10.257 de 10/07/2001",
+     "cod": "552133",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 3, caput, Inciso 3",
+      "Art. 3, caput, Inciso 4",
+      "Art. 41, § 3"
+     ]
+    },
+    {
+     "norma": "Lei nº 10.406 de 10/01/2002",
+     "cod": "552282",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 10.406 de 10/01/2002",
+     "cod": "552282",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 10.406 de 10/01/2002",
+     "cod": "552282",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 10.406 de 10/01/2002",
+     "cod": "552282",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 3",
+      "Art. 3, caput, Inciso 1",
+      "Art. 3, caput, Inciso 2",
+      "Art. 3, caput, Inciso 3",
+      "Art. 4",
+      "Art. 4, caput, Inciso 2",
+      "Art. 4, caput, Inciso 3",
+      "Art. 4, Parágrafo Único",
+      "Art. 228, caput, Inciso 2",
+      "Art. 228, caput, Inciso 3",
+      "Art. 228, § 2",
+      "Art. 1518",
+      "Art. 1548, caput, Inciso 1",
+      "Art. 1550, § 2",
+      "Art. 1557, caput, Inciso 3",
+      "Art. 1557, caput, Inciso 4",
+      "Art. 1767, caput, Inciso 1",
+      "Art. 1767, caput, Inciso 2",
+      "Art. 1767, caput, Inciso 3",
+      "Art. 1767, caput, Inciso 4",
+      "Art. 1768",
+      "Art. 1768, caput, Inciso 4",
+      "Art. 1769",
+      "Art. 1769, caput, Inciso 1",
+      "Art. 1769, caput, Inciso 3",
+      "Art. 1771",
+      "Art. 1772",
+      "Art. 1772, Parágrafo Único",
+      "Art. 1775-A",
+      "Art. 1776",
+      "Art. 1777",
+      "Art. 1780",
+      "Art. 1783-A"
+     ]
+    },
+    {
+     "norma": "Lei nº 10.406 de 10/01/2002",
+     "cod": "552282",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 10.406 de 10/01/2002",
+     "cod": "552282",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 10.406 de 10/01/2002",
+     "cod": "552282",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 10.406 de 10/01/2002",
+     "cod": "552282",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 10.406 de 10/01/2002",
+     "cod": "552282",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 10.406 de 10/01/2002",
+     "cod": "552282",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 11.126 de 27/06/2005",
+     "cod": "570575",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1",
+      "Art. 1, § 2"
+     ]
+    },
+    {
+     "norma": "Decreto Legislativo nº 186 de 09/07/2008",
+     "cod": "592443",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 11.904 de 14/01/2009",
+     "cod": "583529",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 46, caput, Inciso 4, Alínea k"
+     ]
+    },
+    {
+     "norma": "Decreto nº 6.949 de 25/08/2009",
+     "cod": "579385",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 12.587 de 03/01/2012",
+     "cod": "589510",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 12-B"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-10216-2001": {
+   "ok": true,
+   "normaNome": "Lei nº 10.216 de 06/04/2001",
+   "apelido": "LEI-10216-2001-04-06 , Lei da Reforma Psiquiátrica (2001) , Lei Paulo Delgado (2001) , Lei Antimanicomial (2001)",
+   "ementa": "Dispõe sobre a proteção e os direitos das pessoas portadoras de transtornos mentais e redireciona o modelo assistencial em saúde mental.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2001-04-06;10216",
+   "indexacao": [
+    "RESPONSABILIDADE",
+    "ESTADO",
+    "DESENVOLVIMENTO",
+    "POLITICA",
+    "SAUDE MENTAL",
+    "FIXAÇÃO",
+    "NORMAS",
+    "DIREITOS",
+    "ASSISTENCIA MEDICA",
+    "TRATAMENTO MEDICO",
+    "ASSISTENCIA PSIQUIATRICA",
+    "INTERNAMENTO",
+    "PACIENTE",
+    "DOENÇA MENTAL",
+    "DEFICIENTE MENTAL",
+    "EXCEPCIONAL"
+   ],
+   "catalogo": [
+    "SAUDE PUBLICA",
+    "SAUDE MENTAL"
+   ],
+   "classes": [],
+   "edivs": [],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-12015-2009": {
+   "ok": true,
+   "normaNome": "Lei nº 12.015 de 07/08/2009",
+   "apelido": "LEI-12015-2009-08-07",
+   "ementa": "Altera o Título VI da Parte Especial do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 - Código Penal, e o art. 1º da Lei nº 8.072, de 25 de julho de 1990, que dispõe sobre os crimes hediondos, nos termos do inciso XLIII do art. 5º da Constituição Federal e revoga a Lei nº 2.252, de 1º de julho de 1954, que trata de corrupção de menores.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:2009-08-07;12015",
+   "indexacao": [
+    "ALTERAÇÃO",
+    "CODIGO PENAL",
+    "AUMENTO",
+    "PENA",
+    "CRIME HEDIONDO",
+    "CRIME CONTRA A LIBERDADE SEXUAL",
+    "ESTUPRO",
+    "TRAFICO INTERNACIONAL",
+    "OBJETIVO",
+    "EXPLORAÇÃO SEXUAL",
+    "PROSTITUIÇÃO",
+    "CORRUPÇÃO DE MENORES"
+   ],
+   "catalogo": [
+    "CODIGO PENAL",
+    "EXPLORAÇÃO SEXUAL"
+   ],
+   "classes": [
+    "Classificação Temática Unificada / Jurídico / Direito Penal e Penitenciário",
+    "Classificação Temática Unificada / Política Social / Proteção Social / Crianças e Adolescentes"
+   ],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 213",
+      "Art. 214",
+      "Art. 215",
+      "Art. 216",
+      "Art. 216-A",
+      "Art. 217-A",
+      "Art. 218",
+      "Art. 218-A",
+      "Art. 218-B",
+      "Art. 223",
+      "Art. 224",
+      "Art. 225",
+      "Art. 228",
+      "Art. 229",
+      "Art. 230",
+      "Art. 231",
+      "Art. 231-A",
+      "Art. 232",
+      "Art. 234-A",
+      "Art. 234-B",
+      "Art. 234-C"
+     ]
+    },
+    {
+     "norma": "Lei nº 2.252 de 01/07/1954",
+     "cod": "544035",
+     "comentario": "Declaração de Revogação Permanente da Norma no Todo",
+     "dispositivos": []
+    },
+    {
+     "norma": "Lei nº 8.069 de 13/07/1990",
+     "cod": "549945",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 244-B"
+     ]
+    },
+    {
+     "norma": "Lei nº 8.072 de 25/07/1990",
+     "cod": "549948",
+     "comentario": "Declaração de Alteração Permanente",
+     "dispositivos": [
+      "Art. 1"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-2848-1940": {
+   "ok": false,
+   "nao_encontrada": true,
+   "erro": "KeyError: 'documentos'",
+   "consultado_em": "2026-11-03"
+  },
+  "LEI-4898-1965": {
+   "ok": true,
+   "normaNome": "Lei nº 4.898 de 09/12/1965",
+   "apelido": "LEI-4898-1965-12-09 , Lei de Abuso de Autoridade (1965)",
+   "ementa": "Regula o Direito de Representação e o Processo de Responsabilidade Administrativa Civil e Penal, nos casos de abuso de autoridade.",
+   "urn": "https://normas.leg.br/?urn=urn:lex:br:federal:lei:1965-12-09;4898",
+   "indexacao": [
+    "RESPONSABILIDADE CIVIL",
+    "RESPONSABILIDADE PENAL",
+    "ABUSO DE PODER",
+    "DEFINIÇÃO",
+    "PENALIDADE",
+    "SANÇÃO",
+    "PROCESSO",
+    "JULGAMENTO"
+   ],
+   "catalogo": [
+    "ABUSO DE PODER"
+   ],
+   "classes": [],
+   "edivs": [
+    {
+     "norma": "Decreto-Lei nº 2.848 de 07/12/1940",
+     "cod": "527942",
+     "comentario": "Declaração de Legislação Correlata",
+     "dispositivos": [
+      "Art. 61",
+      "Art. 146",
+      "Art. 150",
+      "Art. 151",
+      "Art. 322"
+     ]
+    }
+   ],
+   "consultado_em": "2026-11-03"
+  }
+ },
+ "nao_encontradas": [
+  "LEI-2848-1940"
+ ]
+}

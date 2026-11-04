@@ -1,0 +1,27 @@
+precisao_prevista: 0.94
+precisao_intervalo: 0.82-1.00
+cobertura_prevista: 0.18
+cobertura_intervalo: 0.16-0.33
+
+Previsao calculada (Jeffreys sobre o OOF da propria entrega), reproduzivel em ./replicar.sh (scripts/previsao.py)
+-----------------------------------------------------------------------------------------------------
+Entrega: A1 = roteador por area (qwen-LR de raiz, so texto) + S4 em Penal/Processo + consenso BM25 = qwen-LR em Legislacao Especial/Criminologia.
+OOF 5x5 id-disjunto: 113/118 = 0.958; por repeticao 22/23, 22/23, 22/23, 22/23, 25/26; k = 22.6 acertos e n = 23.6 publicadas por repeticao, contadas por questao DISTINTA (media das 5 repeticoes, pois cada repeticao cobre as mesmas 100 questoes).
+precisao_prevista = Jeffreys (k+1/2)/(n+1) = (22.6+0,5)/(23.6+1) = 0.939; precisao_intervalo = quantis 2,5% e 97,5% de Beta(k+1/2, n-k+1/2) = 0.82-1.00 (Brown, Cai & DasGupta 2001, Statistical Science). Nada foi forcado a 0,95: e o que o calculo deu.
+cobertura_prevista = fracao realmente publicada nas 559 = 103/559 = 0.184 (banco Q0001-Q0359: 47/259; novas Q0360-Q0659: 56/300); cobertura_intervalo = Jeffreys sobre a cobertura OOF da propria entrega (23.6 de 100 questoes distintas) = 0.16-0.33.
+Questoes distintas erradas no OOF da entrega: Q0043 (x5).
+
+Vies de selecao (resultado historico do desenvolvimento, NAO recalculado aqui). A configuracao entregue foi escolhida entre varias olhando as mesmas 100 questoes, entao o OOF dela e otimista (Varma & Simon 2006, BMC Bioinformatics; Cawley & Talbot 2010, JMLR). Para descontar a escolha, durante o desenvolvimento avaliou-se o PROCEDIMENTO de escolha em 25 folds externos (as mesmas particoes 5x5) entre 35 candidatas: a A1 foi a escolhida em 25/25 folds e o limite conservador (Jeffreys) foi precisao 0,94 (0,82-1,00) e cobertura OOF 0,24 (0,16-0,33). O codigo dessa selecao aninhada e das demais rodadas de experimento foi removido do repositorio por simplicidade; os resultados estao em docs/ANEXO_EXPERIMENTOS.md. A coluna `confianca` herda o mesmo otimismo de selecao; a melhor estimativa agregada de precisao e a do cabecalho.
+
+Como cheguei nos numeros
+========================
+Regra de publicacao (A1, sem LLM e sem rede em tempo de decisao; embeddings Qwen3 e sinteticos filtrados lidos do cache). Um roteador de raiz so de texto (LR sobre o embedding Qwen3, sem disciplina/assunto; treinado em sinteticos filtrados + descricoes + linhas da folha do treino) decide a area. Penal e Processo Penal: consenso NB hierarquico = BM25 = LSA no mesmo tema, estavel em >= 80% de 25 subamostras de 80% do treino (bagging do NB) e com score acima do piso do fold (quartil inferior do score do consenso, por CV interna so no treino). Legislacao Especial: BM25 (docs de tema enriquecidos com leis) = qwen-LR no tema da raiz roteada, norma citada concordante ou ausente, estavel em >= 80% de 25 subamostras do qwen-LR e score acima do piso da area. Criminologia: BM25 = qwen-LR + bagging + piso. A norma unica citada forca o tema (+2,8 no logit do score). Tudo e aprendido so no treino do fold externo.
+Motivo da area: o estagio 1 do NB usa a disciplina_origem, que nas questoes novas (Q0360+) nunca e a de Legislacao Especial; sem o roteador, Legislacao Especial e Criminologia ficavam 100% em revisar (configuracao S4, anterior).
+
+Precisao OOF bruta (otimista) = 113/118 = 0.958 (acertos/publicadas somados nas 5 repeticoes; pior repeticao 0.957). Cobertura OOF 0.236; cobertura nas 559 = 0.184 (a producao treina com as 92 nao-fora em vez de ~74 e inclui 300 questoes novas, fora da distribuicao da folha). A precisao nas novas nao e observavel.
+Por area (raiz): Criminologia: OOF 26/26 publicadas de 70; producao 4/64; Direito Penal - Legislação Especial: OOF 20/20 publicadas de 96; producao 22/122; Penal: OOF 46/51 publicadas de 203; producao 52/205; Processo Penal: OOF 21/21 publicadas de 131; producao 25/168.
+
+Calibracao da confianca (OOF aninhado, 100 questoes x 5 reps, publicadas e revisar; LR[publicada, consenso, fracao bagging, score] + isotonica; alvo = ramo correto): [0.00-0.10] n=1 prevista 0.01 x observada 0.00; [0.10-0.30] n=64 prevista 0.24 x observada 0.30; [0.30-0.50] n=214 prevista 0.38 x observada 0.40; [0.50-0.70] n=22 prevista 0.58 x observada 0.45; [0.70-0.90] n=60 prevista 0.81 x observada 0.80; [0.90-0.97] n=62 prevista 0.92 x observada 0.94; [0.97-1.00] n=77 prevista 0.99 x observada 0.92.
+Brier da confianca calibrada: 0.185 (so publicadas: 0.044). Media da confianca calibrada nas publicadas OOF 0.964 x precisao observada 0.958 (n=118); nas revisar 0.466 x 0.469.
+
+Limitacoes. (1) A folha so tem questoes Q0002-Q0356; a precisao nas novas (Q0360+) nao e observavel. (2) n pequeno de questoes distintas: com 24 publicadas distintas o intervalo e muito largo; a unica questao `fora` publicada (Q0043, fixacao da pena) tem rotulo `fora` na folha, mas o texto trata de dosimetria; o numero oficial segue o rotulo da equipe. (3) Selecao entre varias configuracoes nas mesmas 100 questoes (vies de selecao acima). (4) Sinteticos filtrados automaticamente, sem revisao humana. (5) Legislacao Especial (12 rotulos) e Criminologia (10) sao as areas mais fracas em dados: o OOF delas vem de poucas questoes distintas. (6) As linhas OOF usadas para calibrar a confianca vieram do protocolo original, cujos modelos podem ter treinado com ids do fold de teste externo (aproximacao do laco duplo); o vies residual favorece o otimismo.

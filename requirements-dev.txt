@@ -1,0 +1,7 @@
+# Testes da API e notebook de replicacao
+-r requirements-api.txt
+pytest==9.2.0
+httpx==0.28.1
+nbconvert==7.17.2
+nbformat==5.11.1
+ipykernel==7.4.0

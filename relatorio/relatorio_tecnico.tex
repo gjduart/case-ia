@@ -1,0 +1,164 @@
+\documentclass[12pt]{article}
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[brazilian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{tikz}\usetikzlibrary{positioning,arrows.meta,shapes}
+\sloppy\emergencystretch=2em
+\newcommand{\cod}[1]{\texttt{\small #1}}
+\renewcommand{\arraystretch}{1.05}
+\setlength{\parskip}{2pt}
+\newcommand{\concl}[1]{\par\vspace{1pt}{\small\emph{#1}}\par}
+
+\title{Classificação de questões jurídicas com publicação seletiva: relatório técnico}
+\author{Gabriel J. Duarte}
+\address{Case IA --- Método VDE\\ \email{gabrieljduarte98@gmail.com}}
+
+\begin{document}
+\maketitle
+
+
+
+\section*{a) O sistema, peça por peça}
+Resolvi o problema em camadas. Cada camada tem uma função simples; a tabela resume e o diagrama mostra o caminho de uma questão.
+
+\begin{center}\small\textbf{Tabela 1. O que o sistema faz}\\[2pt]
+\begin{tabular}{@{}p{5.2cm}p{9cm}@{}}
+\toprule
+Etapa & Para que serve\\
+\midrule
+Limpeza do texto & tira HTML e letras trocadas\\
+Árvore de temas & funde 12 nós duplicados; prevejo só o nível 1\\
+Vetores de texto (embeddings) & o Qwen3-Embedding só converte cada texto em números, uma vez, antes; não escolhe tema\\
+Roteador por área & regressão logística minha sobre esses vetores decide a área\\
+3 leitores (NB, BM25, LSA); nas áreas novas, BM25 e regressão logística sobre os vetores & dão opiniões independentes\\
+Consenso + estabilidade & publica só se os leitores concordam\\
+Calibração & transforma o escore em probabilidade\\
+\bottomrule
+\end{tabular}
+\end{center}
+\concl{Concluo que prefiro não publicar a publicar errado.}
+
+\begin{center}
+\begin{tikzpicture}[font=\small,node distance=4mm and 6mm,
+ b/.style={draw,rounded corners=2pt,minimum height=7mm,inner sep=3pt,align=center,fill=blue!6},
+ d/.style={draw,rounded corners=2pt,minimum height=7mm,inner sep=3pt,align=center,fill=green!10},
+ r/.style={draw,rounded corners=2pt,minimum height=7mm,inner sep=3pt,align=center,fill=orange!15},
+ a/.style={-{Stealth[length=2mm]}}]
+\node[b](q){questão\\limpa};
+\node[b,right=of q](rot){roteador\\de área};
+\node[d,above right=2mm and 6mm of rot](pen){Penal / Processo:\\NB = BM25 = LSA};
+\node[d,below right=2mm and 6mm of rot](esp){Leg. Esp. / Crim.:\\BM25 = RL(vetores)};
+\node[d,right=38mm of rot](est){estável em 25\\retreinos + piso\\de escore};
+\node[r,above right=0mm and 5mm of est](pub){publicar};
+\node[r,below right=0mm and 5mm of est](rev){revisar};
+\draw[a](q)--(rot);\draw[a](rot)--(pen);\draw[a](rot)--(esp);
+\draw[a](pen)--(est);\draw[a](esp)--(est);\draw[a](est)--(pub);\draw[a](est)--(rev);
+\end{tikzpicture}\\[1mm]
+{\small Arquitetura final: nada aqui chama modelo de linguagem.}
+\end{center}
+
+\textbf{Por que cada peça.} Limpei o texto (Q0099 vinha com HTML do Word; duas tinham letras cirílicas). O case pede o tema central de cada questão (um \cod{tema\_id} de \cod{temas.csv}, de qualquer nível; não exige o nível 2). Publico só no nível 1 porque a régua aceita pai ou filho como certo (39 das 92 da folha têm gabarito em subtema, e o tema-pai conta como acerto) e errar entre irmãos é o erro caro; o custo é que quem estuda direto um subtema não vê a questão. Três leitores (Naive Bayes hierárquico, NB; busca BM25; análise semântica latente, LSA) erram de formas diferentes, então só publico quando os três coincidem. Repito o treino 25 vezes e descarto o que muda de resposta, e corto o quarto inferior do escore. Nas áreas novas, o segundo leitor (além do BM25) é uma regressão logística minha, que lê os vetores pré-calculados pelo Qwen3-Embedding; o Qwen não escolhe nada. O roteador é outra regressão logística sobre esses vetores (acerta a área em 82\%); antes dele, Legislação Especial e Criminologia tinham 0 publicadas.
+
+\textbf{Onde entra (e onde não entra) modelo de linguagem.} (i) O Claude Sonnet gerou sintéticos e descrições só da árvore e da lei, sem ver as questões; ficaram como dado (\cod{prompts/}), passaram por filtro automático e revisei uma amostra de 30 (todos coerentes), e servem só de treino da regressão logística da versão por área, com a folha. (ii) O Qwen3-Embedding só transforma texto em vetor, na preparação (\cod{scripts/embeddings.py}; cache em \cod{cache/embeddings/qwen/}); não gera texto nem vê os temas. (iii) Decidem minhas regressões e regras de consenso; o \cod{replicar.sh} roda offline, sem modelo de linguagem. (iv) Como extra, fora do que o case pede, deixei uma API em que o embedding é uma etapa à parte (\cod{/ingerir}) antes de \cod{/classificar}, que nunca chama modelo de linguagem. (v) Sem rede neural: a versão \emph{consenso estável} (\cod{S4}, 78 publicadas, 0,937; ver anexo).
+
+\textbf{O que testei e descartei.}
+\begin{center}\small\textbf{Tabela 2. O que testei e não usei}\\[2pt]
+\begin{tabular}{@{}p{4.4cm}p{3.1cm}p{5.2cm}@{}}
+\toprule
+Tentativa & Resultado & Por que saiu\\
+\midrule
+Outras arquiteturas (GCN, BiGRU, TextCNN, MLP, árvores, SAT/z3, self-training) & acerto do ramo 0,03--0,38 (NB 0,47) & poucos rótulos por tema\\
+Outros embeddings (e5, BERT jurídico) como voto & abaixo do NB & pior como voto (0,91)\\
+Exemplos sintéticos & NB +4 pontos & consenso caiu a 0,82--0,90\\
+Detector de fora & AUC 0,33--0,49 & não separa nada\\
+Um-contra-o-resto por tema & 0,9375, 55 publ. & barrou 85\% das normais\\
+Corpus da OAB & LSA 0,47 para 0,40 & piorou\\
+Limiar das versões originais & 0,957 e 0,983 & vazava; real 0,884 e 0,91\\
+\bottomrule
+\end{tabular}
+\end{center}
+\concl{Concluo que o ganho veio de exigir concordância e medir sem vazamento, não de modelos sofisticados.}
+
+\section*{b) Os 100 rótulos}
+Usei validação cruzada: divido as 100 questões em 5 partes, treino com 4, testo na quinta até cada parte ser teste uma vez, e repito 5 vezes embaralhando; cada questão é testada por um modelo que não a viu. Usei os rótulos para treino (o NB aprende com as 92 que não são \cod{fora}), calibração (converto o escore em probabilidade só com questões fora da parte de teste) e teste (conto os acertos nas partes de teste). Não separei um conjunto de teste fixo (20 questões seriam pouco); como escolher a configuração nas mesmas questões vicia o resultado, calculei também um limite aninhado (0,94; ver anexo).
+
+\begin{center}\small\textbf{Tabela 3. Resultado}\\[2pt]
+\begin{tabular}{@{}p{7cm}cc@{}}
+\toprule
+Versão & Precisão & Publicadas de 559\\
+\midrule
+Inicial: limiar calibrado (declarava 0,957) & 0,884 & 171\\
+Consenso estável (\cod{S4}) & 0,937 & 78\\
+\textbf{Consenso estável por área} (\cod{A1}, entrega; previsão 0,94) & 0,958 & 103\\
+\bottomrule
+\end{tabular}
+\end{center}
+\concl{Concluo que perdi publicações (171 para 103) para ganhar uma precisão que posso defender.}
+
+\textbf{Por que prevejo 0,94 se a validação deu 0,958?} Publico só cerca de 24 questões distintas por repetição, o que é pouco; a correção de Jeffreys desconta isso para não prometer mais do que os dados sustentam: com o único erro na Q0043, $(22{,}6+\frac{1}{2})/(23{,}6+1)\approx 0{,}94$.
+
+Os rótulos mostraram que a Q0043, marcada \cod{fora}, trata de dosimetria (tema que existe na árvore), e que, com lei especial citada mas foco no instituto, a equipe usa o tema geral.
+
+\section*{c) Diagnóstico}
+\textbf{O que ainda erra.} (i) Questões \cod{fora} que parecem normais, como a Q0043: sempre devolvo um tema. (ii) Pares de irmãos quase iguais (Provas em Espécie/Espécies; Recursos). (iii) Concursos novos: um classificador separa novas de banco com AUC 0,83, então a precisão nelas não é mensurável sem rótulos.
+
+\textbf{O terceiro rótulo, \cod{fora}.} Não emito \cod{fora}. O detector não teve sinal (AUC 0,33--0,49, 8 exemplos) e o um-contra-o-resto recusou 95\% das \cod{fora} e 85\% das normais. Como apagar uma questão boa custa mais que revisá-la, a dúvida vai para \cod{revisar} com tema sugerido; a marca \cod{fora} do professor na fila vira rótulo para o detector.
+
+\textbf{O que resolveria cada um.} (i) Revisar os rótulos \cod{fora} e criar os nós que faltam. (ii) Fundir ou definir a fronteira entre os irmãos. (iii) Rotular 200--300 questões novas.
+
+\textbf{Por que duas áreas tinham 0 publicadas.} As questões novas não trazem a disciplina de Legislação Especial, e o primeiro estágio as mandava a Penal; Criminologia tem só 10 rótulos. O roteador de texto corrigiu isso (Leg. Especial 22 e Criminologia 4 publicadas), mas nasceu de ver essa falha, então a estimativa nessas áreas é otimista.
+
+\section*{d) Produção}
+\textbf{Custo e tempo.} Tudo roda em CPU, sem GPU e sem API paga; as 659 levam cerca de 3,5 min com treino e validação. Medi uma questão por vez, com 8 threads: gerar o vetor leva 1,0\,s e classificar 0,11\,s; para 50 mil questões por semana, cerca de 16\,h de CPU num servidor comum. Num núcleo só seriam cerca de 30\,h; com mais núcleos ou máquinas em paralelo, o tempo cai. Com 18\% de cobertura, cerca de 9 mil seriam publicadas e 41 mil iriam para a fila; o custo real é o tempo do professor.
+
+\begin{center}
+\begin{tikzpicture}[font=\small,node distance=5mm and 5mm,
+ b/.style={draw,rounded corners=2pt,minimum height=7mm,inner sep=2pt,align=center,fill=blue!6},
+ r/.style={draw,rounded corners=2pt,minimum height=8mm,inner sep=3pt,align=center,fill=orange!15},
+ a/.style={-{Stealth[length=2mm]}}]
+\node[b](f){fila revisar\\por incerteza};
+\node[r,right=of f](pr){professor\\corrige};
+\node[b,right=of pr](ro){correções\\viram rótulos};
+\node[b,right=of ro](rt){retreino semanal\\+ recalibração};
+\node[b,below=3mm of ro,minimum height=5mm](au){amostra das publicadas: precisão real};
+\draw[a](f)--(pr);\draw[a](pr)--(ro);\draw[a](ro)--(rt);
+\draw[a](rt.south)|-(au.east);\draw[a](au.west)-|(f.south);
+\end{tikzpicture}
+\end{center}
+\textbf{Correção vira dado.} Ordeno a fila \cod{revisar} pela incerteza do consenso e do retreino (aprendizado ativo; Settles, 2009): o professor não lê as 41 mil, só as mais informativas. Estimo (não medi): 500 por semana, a uns 30\,s cada, são cerca de 4\,h dele e 5 vezes a folha atual, o bastante para medir a precisão nas áreas com 10--12 rótulos. Cada correção entra na folha de treino. \textbf{Retreino semanal} (minutos), com recalibração; toda semana confiro uma amostra aleatória das publicadas para medir a precisão real.
+
+\section*{O que faria com mais tempo}
+Com mais tempo, eu (1) poria o aprendizado ativo da seção d) para rodar; (2) montaria um RAG offline com um modelo gratuito (GLM-4.7-Flash, Z.ai), \emph{só antes da decisão}, para escrever descrições e exemplos revisados e guardados como dado; (3) rotularia mais \cod{fora}; (4) desceria ao subtema só quando a lei e o artigo citados apontam um subtema único.
+
+{\scriptsize\textbf{Referências.} Brown, Cai e DasGupta, \emph{Statistical Science} 16(2), 2001. Varma e Simon, \emph{BMC Bioinformatics} 7:91, 2006. Cawley e Talbot, \emph{JMLR} 11, 2010. Settles, \emph{Active Learning Literature Survey}, 2009.}
+
+\newpage
+\section*{e) Memo para o professor}
+\textbf{Assunto: o que encontrei e o que peço ao senhor.}
+
+Professor, construí um programa que lê cada questão e sugere um tema da árvore. Ele só publica sozinho quando várias leituras independentes apontam o mesmo tema; o resto chega ao senhor em fila, com uma sugestão, e basta confirmar ou trocar.
+
+\textbf{O que encontrei.} Testei o programa cinco vezes nas 100 questões que sua equipe classificou, sempre escondendo dele a resposta: das questões que ele publicou, errou uma só, a Q0043, que a planilha marca como \cod{fora}. Em produção, publico 103 de 559 questões (18\%); espero acertar cerca de 94\% delas. Não consigo garantir os 95\% nas questões novas, porque não há rótulos para medi-las.
+
+\textbf{O que recomendo mudar nos temas.}
+\begin{itemize}
+\item Fundir os nós repetidos (as duas ``Partes'' de Administração Pública, Patrimônio, Teoria da Pena, Competência e Sentença; ``Provas em Espécie'' e ``Espécies''; os Recursos). Eles confundem o sistema e o aluno.
+\item Dizer se são intercambiáveis: Punibilidade e Prescrição; Organizações Criminosas e Lavagem de Dinheiro.
+\item Rever a Q0043 (fixação da pena) e as marcadas \cod{fora}, como a Q0017 e a Q0303, e criar os temas que faltam.
+\end{itemize}
+
+\textbf{Do que preciso do senhor.}
+\begin{enumerate}
+\item Peço que o senhor reveja os rótulos \cod{fora} citados acima.
+\item Peço de 200 a 300 questões novas classificadas (Q0360 em diante), 30 a 50 só de Criminologia e de Legislação Especial.
+\item Peço que me diga a regra: lei especial citada, mas foco no instituto, vale o tema geral?
+\item Revisei 30 exemplos sintéticos sorteados e todos fazem sentido; peço que o senhor confira mais alguns por amostragem.
+\end{enumerate}
+
+\textbf{Como a correção do senhor volta ao sistema.} Cada confirmação ou troca vira uma questão classificada no treino da semana seguinte. As marcadas ``fora da árvore'' viram a lista de temas a criar, e toda semana confiro uma amostra do que publiquei para medir o acerto real.
+\end{document}
