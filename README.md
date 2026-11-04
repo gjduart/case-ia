@@ -37,7 +37,7 @@ A única questão errada na validação, a Q0043, foi marcada `fora` pela equipe
 
 ## 4. Como reproduzir
 
-Os três caminhos geram o mesmo `publicacao.csv`, com md5 `0d9329da890c4816850747cdf3855f99`, e o mesmo cabeçalho de `previsao.txt` (`0.94`, `0.82-1.00`, `0.18`, `0.16-0.33`). Nenhum deles usa internet nem modelo de linguagem.
+Os três caminhos geram o mesmo `publicacao.csv`, e o mesmo cabeçalho de `previsao.txt`. Nenhum deles usa internet nem modelo de linguagem.
 
 **a) Um comando** (Python 3.14; cerca de 3,5 min em CPU):
 ```bash
